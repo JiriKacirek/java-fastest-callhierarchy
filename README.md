@@ -1,2 +1,1 @@
-# java-fastest-callhierarchy
-The fastest Method Call Hierarchy generator for Java on GitHub!
+This is fastest Call Hierarchy generator ever made for Java. :)
