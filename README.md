@@ -45,29 +45,29 @@ Therefore Polymorphism in your code have this unavoidably consequence: your gene
 	class B implements I { @override void someMethod(){} }
 
 	class SomeCaller     { 
- 		void letsCallA() { 
-	 		I i = new A(); 
-			i.someMethod(); 
-  		}
+ 	  void letsCallA() {
+	    I i = new A(); 
+	    i.someMethod(); 
+  	  }
 
-		void letsCallB() { 
-    			I i = new B(); 
-			i.someMethod(); 
-  		}
+	  void letsCallB() {
+	    I i = new B();
+	    i.someMethod(); 
+  	  }
   
-  		void letsCallADirectly() { 
-    			A a = new A(); 
-			a.someMethod(); 
-  		}
+  	  void letsCallADirectly() {
+	    A a = new A(); 
+	    a.someMethod(); 
+  	  }
 	}
 
 Method call hierarchy for A.someMethod() will looks like this:
 
-	some/package/A someMethod ()V	  
-    		some/package/I someMethod()V
-			some/package/SomeCaller letsCallA()V	// VALID PATH
-			some/package/SomeCaller letsCallB()V	// NOT VALID PATH
-		some/package/SomeCaller letsCallADirectly()V	// VALID PATH
+	some/package/A someMethod ()V
+	  some/package/I someMethod()V
+	    some/package/SomeCaller letsCallA()V	// VALID PATH
+	    some/package/SomeCaller letsCallB()V	// NOT VALID PATH
+	  some/package/SomeCaller letsCallADirectly()V	// VALID PATH
 		
 		
 
