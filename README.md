@@ -1,3 +1,6 @@
+*********************************************
+WARNING: repo is damaged for some reasons now
+*********************************************
 Fastest Java Call Hierarchy generator on GitHub. :)
 
 ### PROJECT STATUS:
