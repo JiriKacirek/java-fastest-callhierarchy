@@ -1,8 +1,7 @@
 package cz.george.superfastscanner;
 
+import cz.george.superfastscanner.parsedbytecode.HashMaps;
 import cz.george.superfastscanner.parsedbytecode.clazz.*;
-import cz.george.superfastscanner.parsedbytecode.hashmap.ClassesHashMap;
-import cz.george.superfastscanner.parsedbytecode.hashmap.MethodsMap;
 import cz.george.superfastscanner.hierarchytree.ClassInheritanceNode;
 import cz.george.superfastscanner.hierarchytree.hashmap.InheritanceHierarchyHashMap;
 
@@ -13,20 +12,31 @@ import java.util.*;
  */
 public class AnalysisUtils {
 
-    public static Set<Method> findUsages(Method method, HashMaps tool) {
-        if (method.ownerClass.name == null)
+    private HashMaps hashMaps;
+
+    public AnalysisUtils(HashMaps hashMaps) {
+        this.hashMaps = hashMaps;
+    }
+
+    /**
+     *
+     * @param method For which callers have to be found
+     * @return Empty Set if any caller has been found
+     */
+    public Set<Method> findUsages(Method method) {
+        if (method.getOwnerClass().getName() == null)
             return null;
 
         // instrcutionsMap have hashcode from Instruction, so I convert Method to Instruction for confidence...
-        Instruction instruction = new Instruction(method.name, method.description, method.ownerClass.name, null);
+        Instruction instruction = new Instruction(method.getName(), method.getDescription(), method.getOwnerClass().getName(), null);
 
         // Obtain complete list of instructions matching with given Instruction
-        List<Instruction> completeInstructionsOccurence = tool.instructionsMap.getMap().get(instruction);
+        List<Instruction> completeInstructionsOccurence = hashMaps.instructionsMap.getMap().get(instruction);
 
         // Obtain complete list of given method used in parrents and iterfaces of Class. It will be considered also as usages.
         Set<Method> completeParrentsOccurencee = null;
-        InheritanceHierarchyHashMap methodNamesMap = new InheritanceHierarchyHashMap(new ClassInheritanceNode(method.ownerClass, tool));
-        completeParrentsOccurencee = methodNamesMap.getMap().get(method.name + " " + method.description); // = methodNamesMap.map.get(method.name);
+        InheritanceHierarchyHashMap methodNamesMap = new InheritanceHierarchyHashMap(new ClassInheritanceNode(method.getOwnerClass(), hashMaps));
+        completeParrentsOccurencee = methodNamesMap.getMap().get(method.getName() + " " + method.getDescription()); // = methodNamesMap.map.get(method.name);
 
         // Remove itself from this hierarchy
         completeParrentsOccurencee.remove(method);
@@ -37,7 +47,7 @@ public class AnalysisUtils {
         // Usage is method, in which instrcution is used
         if (completeInstructionsOccurence != null)
             for (Instruction i : completeInstructionsOccurence) {
-                usages.add(i.ownerMethod);
+                usages.add(i.getOwnerMethod());
             }
 
         // And finally usages are also thoose which method overrides
@@ -47,16 +57,16 @@ public class AnalysisUtils {
         return usages;
     }
 
-    public static Set<Clazz> findInterfaces(Clazz clazz, ClassesHashMap classesHashMap) {
+    public Set<Clazz> findInterfaces(Clazz clazz) {
         Set<Clazz> realInterfaces = new HashSet<>();
-        Clazz realClazz = findRealOccurenceInMap(clazz, classesHashMap);
+        Clazz realClazz = findRealOccurenceInMap(clazz);
 
         if(realClazz == null)
             return realInterfaces;
 
-        String[] interfaces = realClazz.interfaces;
+        String[] interfaces = realClazz.getInterfaces();
         for(String interf : interfaces) {
-            Clazz realInterf = findRealOccurenceInMap(new Clazz(interf, null, null), classesHashMap);
+            Clazz realInterf = findRealOccurenceInMap(new Clazz(interf, null, null));
             if(realInterf != null)
             realInterfaces.add(realInterf);
         }
@@ -64,18 +74,18 @@ public class AnalysisUtils {
         return realInterfaces;
     }
 
-    public static Clazz findSuperClass(Clazz clazz, ClassesHashMap classesHashMap) {
-        Clazz realClazz = findRealOccurenceInMap(clazz, classesHashMap);
-        Clazz superClass = findRealOccurenceInMap(new Clazz(realClazz.superName, null, null), classesHashMap);
+    public Clazz findSuperClass(Clazz clazz) {
+        Clazz realClazz = findRealOccurenceInMap(clazz);
+        Clazz superClass = findRealOccurenceInMap(new Clazz(realClazz.getSuperName(), null, null));
         return superClass;
     }
 
-    public static Method findRealOccurenceInMap(Method method, MethodsMap methodsMap) {
-        return methodsMap.getMap().get(method);
+    public Method findRealOccurenceInMap(Method method) {
+        return hashMaps.methodsMap.getMap().get(method);
     }
 
-    public static Clazz findRealOccurenceInMap(Clazz clazz, ClassesHashMap classesHashMap) {
-        Clazz realClass = classesHashMap.getMap().get(clazz);
+    public Clazz findRealOccurenceInMap(Clazz clazz) {
+        Clazz realClass = hashMaps.classesHashMap.getMap().get(clazz);
         return realClass;
     }
 

@@ -12,7 +12,7 @@ import java.util.*;
 public class MethodNamesHashMap extends ArrayListHashMap<String, Method> {
     public MethodNamesHashMap(Set<Clazz> classes) {
         for (Clazz clazz : classes)
-            for (Method method : clazz.methods)
-                putEntry(method.name, method);
+            for (Method method : clazz.getMethods())
+                putEntry(method.getName(), method);
     }
 }

@@ -1,10 +1,11 @@
 package cz.george.superfastscanner.hierarchytree;
 
 import cz.george.superfastscanner.AnalysisUtils;
-import cz.george.superfastscanner.HashMaps;
+import cz.george.superfastscanner.parsedbytecode.HashMaps;
 import cz.george.superfastscanner.utils.tree.Node;
 import cz.george.superfastscanner.parsedbytecode.clazz.Clazz;
 import cz.george.superfastscanner.parsedbytecode.clazz.Method;
+import lombok.Getter;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -18,24 +19,26 @@ import java.util.Set;
  * obtained by thos class.
  */
 public class ClassInheritanceNode extends Node<Clazz> {
-    public Set<ClassInheritanceNode> interfaces = new HashSet<>(); // although interface can only Extends, it's considered as Implements
-    public ClassInheritanceNode superClass = null;
-    HashMaps hashMaps;
+    private @Getter Set<ClassInheritanceNode> interfaces = new HashSet<>(); // although interface can only Extends, it's considered as Implements
+    private @Getter ClassInheritanceNode superClass = null;
+    private HashMaps hashMaps;
+    private AnalysisUtils analysisUtils;
 
     public ClassInheritanceNode(Clazz clazz, HashMaps hashMaps) {
         super(clazz);
         this.hashMaps = hashMaps;
-        setNodeValue(clazz);
+        this.analysisUtils = new AnalysisUtils(hashMaps);
+        setValue(clazz);
 
         enrichClazzMethods();
     }
 
     private void enrichClazzMethods() {
         Set<Method> newClazzMethods = walkToLeafInterfaces();
-        this.getNodeValue().methods.addAll( newClazzMethods );
+        this.getValue().getMethods().addAll( newClazzMethods );
 
         newClazzMethods = walkToLeafSuperClass();
-        this.getNodeValue().methods.addAll(newClazzMethods);
+        this.getValue().getMethods().addAll(newClazzMethods);
     }
 
     /**
@@ -45,15 +48,15 @@ public class ClassInheritanceNode extends Node<Clazz> {
     public Set<Method> walkToLeafInterfaces() {
         Set<Method> inheritedMethods = new HashSet<>();
 
-        Set<Clazz> interfaces = AnalysisUtils.findInterfaces(getNodeValue(), hashMaps.classesHashMap);
+        Set<Clazz> interfaces = analysisUtils.findInterfaces(getValue());
         for(Clazz interfac : interfaces) {
             this.interfaces.add(new ClassInheritanceNode(interfac, hashMaps)); // RECURSION
         }
 
         // Bring down methods from parrent
         for(Clazz interfac : interfaces) {
-            for(Method method : interfac.methods) {
-                Method inheritedMethodNewDesign = new Method(method.name, method.description, getNodeValue());
+            for(Method method : interfac.getMethods()) {
+                Method inheritedMethodNewDesign = new Method(method.getName(), method.getDescription(), getValue());
                 inheritedMethods.add(inheritedMethodNewDesign);
             }
         }
@@ -68,13 +71,13 @@ public class ClassInheritanceNode extends Node<Clazz> {
     public Set<Method> walkToLeafSuperClass() {
         Set<Method> inheritedMethods = new HashSet<>();
 
-        Clazz foundSuperClass = AnalysisUtils.findSuperClass(getNodeValue(), hashMaps.classesHashMap);
+        Clazz foundSuperClass = analysisUtils.findSuperClass(getValue());
         if(foundSuperClass != null) {
             this.superClass = new ClassInheritanceNode(foundSuperClass, hashMaps); // RECURSION
 
             // Bring methods from parrent
-            for (Method method : foundSuperClass.methods) {
-                Method inheritedMethodNewDesign = new Method(method.name, method.description, getNodeValue());
+            for (Method method : foundSuperClass.getMethods()) {
+                Method inheritedMethodNewDesign = new Method(method.getName(), method.getDescription(), getValue());
                 inheritedMethods.add(inheritedMethodNewDesign);
             }
         }
@@ -82,13 +85,12 @@ public class ClassInheritanceNode extends Node<Clazz> {
         return inheritedMethods;
     }
 
-    @Override
-    public void setNodeValue(Clazz nodeValue) {
-        Clazz realOccurence = AnalysisUtils.findRealOccurenceInMap(nodeValue, hashMaps.classesHashMap);
+    public void setValue(Clazz value) {
+        Clazz realOccurence = analysisUtils.findRealOccurenceInMap(value);
 
         if (realOccurence == null)
-            throw new IllegalStateException("Class '" + nodeValue + "' not found.");
+            throw new IllegalStateException("Class '" + value + "' not found.");
 
-        super.setNodeValue(realOccurence);
+        this.value = realOccurence;
     }
 }

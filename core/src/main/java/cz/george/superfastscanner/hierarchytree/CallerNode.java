@@ -1,32 +1,35 @@
 package cz.george.superfastscanner.hierarchytree;
 
 import cz.george.superfastscanner.AnalysisUtils;
-import cz.george.superfastscanner.HashMaps;
+import cz.george.superfastscanner.parsedbytecode.HashMaps;
 import cz.george.superfastscanner.parsedbytecode.clazz.Method;
 
 import java.util.HashSet;
 import java.util.Set;
 
-public class CallersTreeNode {
-    Method callee; // current node Method
-    Set<CallersTreeNode> callers = new HashSet<>();
+public class CallerNode {
+    private Method callee; // current node Method
+    private Set<CallerNode> callers = new HashSet<>();
 
-    CallersTreeNode parrent; // if null then this node is Root
+    private CallerNode parrent; // if null then this node is Root
 
-    int layer = 0;
-    int MAX_LAYER = Integer.MAX_VALUE;
+    private AnalysisUtils analysisUtils;
 
-    HashMaps hashMaps;
+    private int layer = 0;
+    private int MAX_LAYER = Integer.MAX_VALUE;
 
-    public CallersTreeNode(Method callee, HashMaps map) {
+    private HashMaps hashMaps;
+
+    public CallerNode(Method callee, HashMaps map) {
         init(callee, null, map, 0);
     }
 
-    private CallersTreeNode(Method callee, CallersTreeNode parrent, HashMaps map, int layer) {
+    private CallerNode(Method callee, CallerNode parrent, HashMaps map, int layer) {
         init(callee, parrent, map, layer);
     }
 
-    private void init(Method callee, CallersTreeNode parrent, HashMaps hashMaps, int layer) {
+    private void init(Method callee, CallerNode parrent, HashMaps hashMaps, int layer) {
+        this.analysisUtils = new AnalysisUtils(hashMaps);
         this.callee = callee;
         this.hashMaps = hashMaps;
         this.layer = layer;
@@ -37,20 +40,20 @@ public class CallersTreeNode {
             this.callers = findCallersRecursively();
     }
 
-    Set<CallersTreeNode> findCallersRecursively() {
-        Set<Method> callers = AnalysisUtils.findUsages(callee, hashMaps);
+    Set<CallerNode> findCallersRecursively() {
+        Set<Method> callers = analysisUtils.findUsages(callee);
         if (callers != null) {
             for (Method caller : callers) {
                 if (!isMethodAlreadyCalled(caller))
-                    this.callers.add(new CallersTreeNode(caller, this, hashMaps, layer + 1));  // RECURSION
+                    this.callers.add(new CallerNode(caller, this, hashMaps, layer + 1));  // RECURSION
             }
         }
         return this.callers;
     }
 
     /**
-     * Find if method have been yet called in Current-Node-to-Root-Node path. If yes, it will lead into
-     * infinite recursion which have to be avoided.
+     * Find if method have been already called in Current-Node-to-Root-Node path. If yes, it will lead into
+     * infinite recursion which has to be avoided.
      */
     boolean isMethodAlreadyCalled(Method method) {
         // Walk right into the root-1

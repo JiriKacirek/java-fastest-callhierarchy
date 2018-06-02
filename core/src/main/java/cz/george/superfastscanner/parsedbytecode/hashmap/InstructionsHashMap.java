@@ -11,8 +11,8 @@ import java.util.*;
 public class InstructionsHashMap extends ArrayListHashMap<Instruction, Instruction> {
     public InstructionsHashMap(Set<Clazz> classes) {
         for (Clazz clazz : classes)
-            for (Method method : clazz.methods)
-                for (Instruction instruction : method.instructions) {
+            for (Method method : clazz.getMethods())
+                for (Instruction instruction : method.getInstructions()) {
                     putEntry(instruction, instruction);
                 }
     }

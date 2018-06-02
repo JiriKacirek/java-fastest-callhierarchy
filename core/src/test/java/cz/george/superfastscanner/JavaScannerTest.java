@@ -2,17 +2,18 @@ package cz.george.superfastscanner;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Set;
 import java.util.jar.JarFile;
 
-import cz.george.superfastscanner.hierarchytree.CallersTreeNode;
+import cz.george.superfastscanner.hierarchytree.CallerNode;
+import cz.george.superfastscanner.parsedbytecode.HashMaps;
 import cz.george.superfastscanner.parsedbytecode.JARLoader;
 import cz.george.superfastscanner.parsedbytecode.clazz.Clazz;
 import cz.george.superfastscanner.parsedbytecode.clazz.Method;
 import cz.george.superfastscanner.hierarchytree.ClassInheritanceNode;
 import cz.george.superfastscanner.hierarchytree.hashmap.InheritanceHierarchyHashMap;
+import cz.george.superfastscanner.utils.Utils;
+import cz.george.superfastscanner.utils.tree.Node;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -34,7 +35,11 @@ public class JavaScannerTest {
 	public void printCallers() throws IOException {
 		Set<Clazz> parsedClasses = jarLoader.getParsedClasses();
 		HashMaps hashMaps = new HashMaps(parsedClasses);
-		CallersTreeNode callersTreeNode = new CallersTreeNode(calle, hashMaps);
+		HierarchyGen hierarchyGen = new HierarchyGen(hashMaps);
+		Node<Method> rootCallerNode = hierarchyGen.findCallers(calle);
+		Utils.consolePrintNode(rootCallerNode);
+		System.out.println();
+		CallerNode callerNode = new CallerNode(calle, hashMaps);
 	}
 
 	@Test

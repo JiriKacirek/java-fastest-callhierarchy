@@ -1,18 +1,17 @@
 package cz.george.superfastscanner.parsedbytecode.clazz;
 
+import lombok.Getter;
+
 import java.util.HashSet;
 import java.util.Set;
 import static cz.george.superfastscanner.parsedbytecode.clazz.Clazz.*;
 
-/**
- * Created by John on 4/8/2017.
- */
 public class Method {
-    public Clazz ownerClass;
+    private @Getter Clazz ownerClass;
 
-    public String name;
-    public String description;
-    public Set<Instruction> instructions = new HashSet<Instruction>();
+    private @Getter String name;
+    private @Getter String description;
+    private @Getter Set<Instruction> instructions = new HashSet<Instruction>();
 
     public Method(String name, String description, Clazz owner) {
         init(name, description, owner);
@@ -47,6 +46,6 @@ public class Method {
 
     @Override
     public String toString() {
-        return append(new StringBuilder(), ownerClass.name, " ", name, " ", description).toString();
+        return append(new StringBuilder(), ownerClass.getName(), " ", name, " ", description).toString();
     }
 }

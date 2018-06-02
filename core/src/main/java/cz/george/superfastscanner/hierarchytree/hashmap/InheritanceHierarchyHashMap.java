@@ -21,23 +21,23 @@ public class InheritanceHierarchyHashMap extends HashSetHashMap<String, Method> 
 
     private void walkThroughTheTreeRecursively(ClassInheritanceNode interfacesTree) {
         // for interfaces
-        for (ClassInheritanceNode childNode : interfacesTree.interfaces) {
+        for (ClassInheritanceNode childNode : interfacesTree.getInterfaces()) {
             walkThroughTheTreeRecursively(childNode);
         }
-        fullfillMap(interfacesTree.getNodeValue().methods);
+        fullfillMap(interfacesTree.getValue().getMethods());
 
         // for super classes
-        ClassInheritanceNode childNode = interfacesTree.superClass;
+        ClassInheritanceNode childNode = interfacesTree.getSuperClass();
         if (childNode != null)
             walkThroughTheTreeRecursively(childNode);
 
-        fullfillMap(interfacesTree.getNodeValue().methods);
+        fullfillMap(interfacesTree.getValue().getMethods());
     }
 
     private void fullfillMap(Set<Method> methods) {
         for (Method method : methods) {
             sb.setLength(0); // clear
-            String key = sb.append(method.name).append(" ").append(method.description).toString();
+            String key = sb.append(method.getName()).append(" ").append(method.getDescription()).toString();
             putEntry(key, method);
         }
     }

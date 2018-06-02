@@ -12,7 +12,7 @@ import java.util.*;
 public class MethodsMap extends OneToOneHashMap<Method,Method> {
     public MethodsMap(Set<Clazz> classes) {
         for (Clazz clazz : classes)
-            for (Method method : clazz.methods)
+            for (Method method : clazz.getMethods())
                 map.put(method, method);
     }
 }

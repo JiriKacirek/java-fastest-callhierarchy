@@ -9,12 +9,12 @@ import org.objectweb.asm.Opcodes;
  * Visitor-pattern class for Java Agent.
  */
 public class ClassParserVisitor extends ClassVisitor {
-	boolean resultReady = false;
+	private boolean resultReady = false;
 
-	Clazz parsingClass;
-	Method parsingMethod;
+	private Clazz parsingClass;
+	private Method parsingMethod;
 
-	CompleteMethodVisitor completeMethodVisitor = new CompleteMethodVisitor(Opcodes.ASM5);
+	private CompleteMethodVisitor completeMethodVisitor = new CompleteMethodVisitor(Opcodes.ASM5);
 
 	public ClassParserVisitor() {
 		super(Opcodes.ASM5);
@@ -31,7 +31,7 @@ public class ClassParserVisitor extends ClassVisitor {
 	@Override
 	public MethodVisitor visitMethod(int access, String name, String desc, String signature, String[] exceptions) {
 		parsingMethod = new Method(name, desc, parsingClass);
-		parsingClass.methods.add(parsingMethod);
+		parsingClass.getMethods().add(parsingMethod);
 		return completeMethodVisitor;
 	}
 
@@ -44,7 +44,7 @@ public class ClassParserVisitor extends ClassVisitor {
 		@Override
 		public void visitMethodInsn(int opcode, String owner, String name, String desc, boolean itf) {
 			parsingInstruction = new Instruction(name, desc, owner, parsingMethod);
-			parsingMethod.instructions.add(parsingInstruction);
+			parsingMethod.getInstructions().add(parsingInstruction);
 		}
 	}
 

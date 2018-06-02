@@ -14,11 +14,13 @@ import java.util.jar.JarFile;
  * Parse compiled classes in JAR file into Clazz objects.
  */
 public class JARLoader {
-    boolean resultReady = false;
     private Set<Clazz> parsedClasses = new HashSet<Clazz>();
     JarFile jarFile;
 
-    public JARLoader(JarFile jar) throws IOException { jarFile = jar; loadJAR(); resultReady = true; }
+    public JARLoader(JarFile jar) throws IOException {
+        jarFile = jar;
+        loadJAR();
+    }
 
     private void loadJAR() throws IOException {
 
@@ -49,7 +51,7 @@ public class JARLoader {
     }
 
     public Set<Clazz> getParsedClasses() {
-        return resultReady ? parsedClasses : null;
+        return parsedClasses;
     }
 
 

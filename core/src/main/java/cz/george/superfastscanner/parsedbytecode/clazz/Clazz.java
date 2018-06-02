@@ -1,17 +1,18 @@
 package cz.george.superfastscanner.parsedbytecode.clazz;
 
+import lombok.Data;
+import lombok.Getter;
+
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * Created by John on 4/8/2017.
- */
 public class Clazz {
-    public String name = "";
-    public String superName = "";
-    public String[] interfaces = new String[0];
-    public Set<Method> methods = new HashSet<Method>();
+
+    private @Getter String name = "";
+    private @Getter String superName = "";
+    private @Getter String[] interfaces = new String[0];
+    private @Getter Set<Method> methods = new HashSet<Method>();
 
     public Clazz(String name, String superName, String[] interfaces) {
         this.name = name; this.superName = superName; this.interfaces = interfaces;
