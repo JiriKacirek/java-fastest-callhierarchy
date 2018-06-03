@@ -2,37 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5c6c9f8-87a1-4feb-968a-a81536697d46" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/AnalysisUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/AnalysisUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/HierarchyGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/HierarchyGen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/ArrayListHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/datastructures/ArrayListHashMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/HashMapHashSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/datastructures/HashMapHashSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/datastructures/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/OneToManyHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/datastructures/OneToManyHashMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/OneToOneHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/datastructures/OneToOneHashMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/hierarchytree/ClassInheritanceNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/hierarchytree/ClassInheritanceNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/hierarchytree/InheritanceHierarchyHashMapHashSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/hierarchytree/InheritanceHierarchyHashMapHashSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/hierarchytree/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/hierarchytree/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/ClassParserVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/parsedbytecode/ClassParserVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/JARLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/parsedbytecode/JARLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/ParsedClassesContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/parsedbytecode/ParsedClassesContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/clazz/Clazz.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/parsedbytecode/clazz/Clazz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/clazz/Instruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/parsedbytecode/clazz/Instruction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/clazz/Method.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/parsedbytecode/clazz/Method.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/hashmap/ClassesHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/parsedbytecode/hashmap/ClassesHashMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/hashmap/InstructionsHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/parsedbytecode/hashmap/InstructionsHashMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/hashmap/MethodNamesHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/parsedbytecode/hashmap/MethodNamesHashMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/hashmap/MethodsMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/parsedbytecode/hashmap/MethodsMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/utils/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/test/java/cz/george/superfastscanner/JavaScannerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/java/kacirekj/fastcallhierarchy/QuickStartGuideIT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/superfastscanner.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-app/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-app/testmodule.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/test/java/kacirekj/fastcallhierarchy/QuickStartGuideIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/java/kacirekj/fastcallhierarchy/QuickStartGuideIT.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/core/target/" />
@@ -133,8 +104,8 @@
       <file leaf-file-name="QuickStartGuideIT.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/test/java/kacirekj/fastcallhierarchy/QuickStartGuideIT.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="45" column="56" selection-start-line="45" selection-start-column="56" selection-end-line="45" selection-end-column="56" />
+            <state relative-caret-position="262">
+              <caret line="26" column="99" selection-start-line="26" selection-start-column="99" selection-end-line="26" selection-end-column="99" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -337,6 +308,14 @@
             <path>
               <item name="java-fastest-callhierarchy" type="b2602c69:ProjectViewProjectNode" />
               <item name="java-fastest-callhierarchy" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-fastest-callhierarchy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-fastest-callhierarchy" type="462c0819:PsiDirectoryNode" />
               <item name="test-app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -382,7 +361,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.Testmodule clean install, update repository JAR">
+  <component name="RunManager" selected="JUnit.QuickStartGuideIT">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -501,6 +480,29 @@
       </option>
       <patterns />
     </configuration>
+    <configuration name="QuickStartGuideIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fastcallhierarchy-core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kacirekj.fastcallhierarchy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="kacirekj.fastcallhierarchy" />
+      <option name="MAIN_CLASS_NAME" value="kacirekj.fastcallhierarchy.QuickStartGuideIT" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -607,9 +609,11 @@
       <item itemvalue="JUnit.JavaScannerTest.findAllClassesThatExtendsOrImplementsA" />
       <item itemvalue="JUnit.JavaScannerTest.printCallers" />
       <item itemvalue="JUnit.JavaScannerTest" />
+      <item itemvalue="JUnit.QuickStartGuideIT" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.QuickStartGuideIT" />
         <item itemvalue="JUnit.JavaScannerTest" />
         <item itemvalue="JUnit.JavaScannerTest.printCallers" />
         <item itemvalue="JUnit.JavaScannerTest.print" />
@@ -630,7 +634,7 @@
       <workItem from="1527934727194" duration="10952000" />
       <workItem from="1527950610603" duration="4151000" />
       <workItem from="1527955749296" duration="285000" />
-      <workItem from="1527956063906" duration="29074000" />
+      <workItem from="1527956063906" duration="29173000" />
     </task>
     <servers />
   </component>
@@ -667,7 +671,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44462000" />
+    <option name="totallyTimeSpent" value="44561000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -1099,8 +1103,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/test/java/kacirekj/fastcallhierarchy/QuickStartGuideIT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="45" column="56" selection-start-line="45" selection-start-column="56" selection-end-line="45" selection-end-column="56" />
+        <state relative-caret-position="262">
+          <caret line="26" column="99" selection-start-line="26" selection-start-column="99" selection-end-line="26" selection-end-column="99" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -24,7 +24,7 @@ public class QuickStartGuideIT {
 		// 0. Load testing JAR file (replace with your JAR)
 		String runPath = URLDecoder.decode(
 				QuickStartGuideIT.class.getProtectionDomain().getCodeSource().getLocation().getPath(), "UTF-8");
-		File testJAR = new File(runPath + File.separator + "testmodule-1.0.1.jar");
+		File testJAR = new File(runPath + File.separator + "fastcallhierarchy-testproject-1.0.1.jar");
 
 		// 1. Create JARLoader.
 		JarFile jarFile = new JarFile(testJAR);
