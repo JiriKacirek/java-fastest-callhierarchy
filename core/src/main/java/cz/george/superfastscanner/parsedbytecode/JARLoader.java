@@ -23,15 +23,6 @@ public class JARLoader {
     }
 
     private void loadJAR() throws IOException {
-
-        File f = new File("pju");
-        FileOutputStream fs = new FileOutputStream("pju");
-        //File.createTempFile();
-
-        Object o = new Object();
-        OutputStream obj ;
-
-
         ClassParserVisitor completeClassVisitor = new ClassParserVisitor();
 
         Enumeration<JarEntry> entries = jarFile.entries();
@@ -43,16 +34,13 @@ public class JARLoader {
                 ClassReader reader = new ClassReader(stream);
 
                 reader.accept(completeClassVisitor, 0);
-                parsedClasses.add( completeClassVisitor.getParsedClassIfReady() );
+                parsedClasses.add(completeClassVisitor.getParsedClassIfReady());
 
                 stream.close();
             }
         }
     }
-
     public Set<Clazz> getParsedClasses() {
         return parsedClasses;
     }
-
-
 }

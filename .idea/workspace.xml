@@ -2,50 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5c6c9f8-87a1-4feb-968a-a81536697d46" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/hierarchytree/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/AnalysisUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/AnalysisUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/HierarchyGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/HierarchyGen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/ArrayListHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/ArrayListHashMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/HashSetHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/HashMapHashSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/OneToManyHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/OneToManyHashMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/OneToOneHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/OneToOneHashMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/ParsedClassesContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/ParsedClassesContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/hierarchytree/ClassInheritanceNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/hierarchytree/ClassInheritanceNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/hierarchytree/hashmap/InheritanceHierarchyHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/hierarchytree/InheritanceHierarchyHashMapHashSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/clazz/Clazz.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/clazz/Clazz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/clazz/Method.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/clazz/Method.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/test/java/cz/george/superfastscanner/JavaScannerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/java/cz/george/superfastscanner/JavaScannerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/superfastscanner.iml" beforeDir="false" afterPath="$PROJECT_DIR$/core/superfastscanner.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/AnalysisUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/AnalysisUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/HierarchyGen.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/HierarchyGen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/hierarchytree/ClassInheritanceNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/hierarchytree/ClassInheritanceNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/hierarchytree/hashmap/InheritanceHierarchyHashMap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/parsedbytecode/clazz/Clazz.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/parsedbytecode/clazz/Clazz.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/parsedbytecode/clazz/Method.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/parsedbytecode/clazz/Method.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/core-1.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/core-1.0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/surefire-reports/TEST-cz.george.superfastscanner.JavaScannerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/surefire-reports/TEST-cz.george.superfastscanner.JavaScannerTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/surefire-reports/cz.george.superfastscanner.JavaScannerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/surefire-reports/cz.george.superfastscanner.JavaScannerTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/test-classes/cz/george/superfastscanner/JavaScannerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/test-classes/cz/george/superfastscanner/JavaScannerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-app/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-app/src/main/java/cz/george/testmodule/A.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-app/src/main/java/cz/george/testmodule/A.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-app/src/main/java/cz/george/testmodule/B.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-app/src/main/java/cz/george/testmodule/B.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-app/src/main/java/cz/george/testmodule/K.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-app/src/main/java/cz/george/testmodule/K.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-app/target/classes/cz/george/testmodule/A.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-app/target/classes/cz/george/testmodule/B.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-app/target/classes/cz/george/testmodule/Interface0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-app/target/classes/cz/george/testmodule/K.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-app/target/classes/cz/george/testmodule/O.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-app/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-app/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-app/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-app/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-app/target/testmodule-1.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/JARLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/JARLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/test/resources/testmodule-1.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/resources/testmodule-1.0.1.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/core/target/" />
@@ -67,15 +25,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1649">
               <caret line="103" column="24" selection-start-line="103" selection-start-column="24" selection-end-line="103" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Map.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/util/Map.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="211" column="6" selection-start-line="211" selection-start-column="6" selection-end-line="211" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -119,11 +68,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test-app/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="25" column="63" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
+            <state relative-caret-position="493">
+              <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JARLoader.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/JARLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -174,6 +132,7 @@
       <find>null</find>
       <find>john</find>
       <find>walk</find>
+      <find>pju</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -193,7 +152,6 @@
         <option value="$PROJECT_DIR$/test-app/src/main/java/cz/george/testmodule/L.java" />
         <option value="$PROJECT_DIR$/test-app/src/main/java/cz/george/testmodule/Interface0.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/HashMaps.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/JARLoader.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/hashmap/MethodsMap.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/clazz/Instruction.java" />
@@ -223,6 +181,7 @@
         <option value="$PROJECT_DIR$/core/src/test/java/cz/george/superfastscanner/JavaScannerTest.java" />
         <option value="$PROJECT_DIR$/core/pom.xml" />
         <option value="$PROJECT_DIR$/test-app/pom.xml" />
+        <option value="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/JARLoader.java" />
       </list>
     </option>
   </component>
@@ -276,7 +235,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-4" />
     <option name="width" value="1932" />
     <option name="height" value="1092" />
@@ -357,27 +316,6 @@
             <path>
               <item name="java-fastest-callhierarchy" type="b2602c69:ProjectViewProjectNode" />
               <item name="java-fastest-callhierarchy" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-fastest-callhierarchy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-fastest-callhierarchy" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-fastest-callhierarchy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-fastest-callhierarchy" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-fastest-callhierarchy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-fastest-callhierarchy" type="462c0819:PsiDirectoryNode" />
               <item name="test-app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -422,7 +360,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.JavaScannerTest">
+  <component name="RunManager" selected="Maven.Testmodule clean install">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -670,17 +608,11 @@
       <workItem from="1527934727194" duration="10952000" />
       <workItem from="1527950610603" duration="4151000" />
       <workItem from="1527955749296" duration="285000" />
-      <workItem from="1527956063906" duration="24773000" />
+      <workItem from="1527956063906" duration="25147000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="JavaScannerTest - 2018.06.03 at 12h 00m 56s.xml">
-      <configuration name="JavaScannerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JavaScannerTest - 2018.06.03 at 12h 01m 21s.xml">
-      <configuration name="JavaScannerTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="JavaScannerTest - 2018.06.03 at 12h 04m 28s.xml">
       <configuration name="JavaScannerTest" configurationId="JUnit" />
     </history-entry>
@@ -705,9 +637,15 @@
     <history-entry file="JavaScannerTest - 2018.06.03 at 12h 18m 32s.xml">
       <configuration name="JavaScannerTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="JavaScannerTest - 2018.06.03 at 12h 26m 40s.xml">
+      <configuration name="JavaScannerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JavaScannerTest - 2018.06.03 at 12h 31m 29s.xml">
+      <configuration name="JavaScannerTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40161000" />
+    <option name="totallyTimeSpent" value="40535000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -723,11 +661,11 @@
       <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.14739583" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.58020836" visible="true" weight="0.3716075" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.58020836" visible="true" weight="0.3716075" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7570093" visible="true" weight="0.23697917" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7570093" visible="true" weight="0.23697917" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.5416667" weight="0.4551148" />
       <window_info id="Structure" order="1" sideWeight="0.24299066" side_tool="true" weight="0.16510417" />
@@ -989,13 +927,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/JARLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="53" column="28" selection-start-line="53" selection-start-column="15" selection-end-line="53" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/ParsedClassesContainer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1131,8 +1062,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test-app/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="25" column="63" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
+        <state relative-caret-position="493">
+          <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/JARLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
         </state>
       </provider>
     </entry>
