@@ -2,13 +2,13 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>cz.george</groupId>
-		<artifactId>superfastscanner</artifactId>
+		<groupId>kacirekj</groupId>
+		<artifactId>fastcallhierarchy</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-	<groupId>cz.george</groupId>
-	<artifactId>testmodule</artifactId>
+	<groupId>kacirekj</groupId>
+	<artifactId>fastcallhierarchy-testproject</artifactId>
 	<version>1.0.1</version>
 	<packaging>jar</packaging>
 

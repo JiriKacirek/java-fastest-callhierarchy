@@ -1,4 +1,11 @@
-This is fastest Call Hierarchy generator ever made for Java. :)
+This is fastest Method Call Hierarchy generator ever made for Java. :)
+
+Quick start
+***********
+
+1. Download or Clone this repository
+2. Open project in IntelliJ IDEA (it should work anyware but I've hot tested it)
+3. Look in /core/src/test/java/JavaScannerTest
 
 PROJECT STATUS:
 - Method call hierarchy for the given method bytecode signature is working and it had been tested on very complex banking application with success
