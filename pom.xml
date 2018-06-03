@@ -1,13 +1,15 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-	<groupId>cz.george</groupId>
-	<artifactId>superfastscanner</artifactId>
-	<version>1.0.1</version>
-	<packaging>jar</packaging>
+	<groupId>kacirekj</groupId>
+	<artifactId>fastcallhierarchy</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
 
-	<name>Lighting Bytecode Method Call Hierarchy</name>
-	<description>Bytecode Method Call Hierarchy generator which conquer the speed of light!</description>
+	<packaging>pom</packaging>
+    <name>parrent-pom</name>
 
 	<developers>
 		<developer>
@@ -19,17 +21,6 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-
-	<distributionManagement>
-		<snapshotRepository>
-			<id>ossrh</id>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-		</snapshotRepository>
-		<repository>
-			<id>ossrh</id>
-			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-		</repository>
-	</distributionManagement>
 
 	<build>
 		<plugins>
@@ -46,16 +37,12 @@
 	</build>
 
 	<dependencies>
-		<dependency>
-			<groupId>org.ow2.asm</groupId>
-			<artifactId>asm</artifactId>
-			<version>5.1</version>
-		</dependency>
-		<dependency>
-			<groupId>org.ow2.asm</groupId>
-			<artifactId>asm-commons</artifactId>
-			<version>5.1</version>
-		</dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.22</version>
+            <scope>provided</scope>
+        </dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -63,4 +50,9 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
+	<modules>
+		<module>core</module>
+		<module>test-app</module>
+    </modules>
 </project>

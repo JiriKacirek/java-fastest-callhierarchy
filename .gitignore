@@ -1,1 +1,4 @@
-/*.iml
+/core/target
+/test-app/target
+/test-app/*.iml
+/core/*.iml

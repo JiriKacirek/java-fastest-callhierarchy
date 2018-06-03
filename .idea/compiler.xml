@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="fastcallhierarchy-core" />
+        <module name="fastcallhierarchy-testproject" />
+        <module name="superfastscanner" />
+        <module name="testmodule" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="fastcallhierarchy-core" target="1.8" />
+      <module name="fastcallhierarchy-testproject" target="1.8" />
+      <module name="java-fastest-callhierarchy" target="1.8" />
+      <module name="superfastscanner" target="1.8" />
+      <module name="testmodule" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
