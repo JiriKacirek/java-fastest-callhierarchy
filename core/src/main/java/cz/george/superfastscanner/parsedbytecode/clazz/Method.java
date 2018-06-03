@@ -7,18 +7,14 @@ import java.util.Set;
 import static cz.george.superfastscanner.parsedbytecode.clazz.Clazz.*;
 
 public class Method {
-    private @Getter Clazz ownerClass;
-    private @Getter String name;
-    private @Getter String description;
-    private @Getter Set<Instruction> instructions = new HashSet<Instruction>();
-
-    public Method(String name, String description, Clazz owner) {
-        init(name, description, owner);
-    }
+    private @Getter Clazz ownerClass;   // path/to/some/Clazz
+    private @Getter String name;        // someMethodName
+    private @Getter String description; // ()V
+    private @Getter Set<Instruction> instructions = new HashSet<Instruction>(); // Methods used in Method body are called Instructions
 
     /**
-     *
-     * @param signature for example for method returning void a taking no arguments:  path/to/some/Clazz someMethodName ()V
+     * @param signature for example for method returning void and taking no arguments:
+     *                  path/to/some/Clazz someMethodName ()V
      */
     public Method(String signature) {
         String[] signatures = signature.split(" ");
@@ -26,11 +22,16 @@ public class Method {
             throw new IllegalArgumentException("Invalid Method signature: " + signature);
 
         init(signatures[1], signatures[2], new Clazz(signatures[0], null, null) );
-
     }
 
-    void init(String name, String description, Clazz owner) {
-        this.name = name; this.description = description; this.ownerClass = owner;
+    public Method(String name, String description, Clazz owner) {
+        init(name, description, owner);
+    }
+
+    private void init(String name, String description, Clazz owner) {
+        this.name = name;
+        this.description = description;
+        this.ownerClass = owner;
     }
 
     @Override

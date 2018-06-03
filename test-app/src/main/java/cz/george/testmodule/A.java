@@ -1,8 +1,5 @@
 package cz.george.testmodule;
 
-/**
- * Created by John on 4/9/2017.
- */
 public class A extends B {
     public String getA() {
         return a;

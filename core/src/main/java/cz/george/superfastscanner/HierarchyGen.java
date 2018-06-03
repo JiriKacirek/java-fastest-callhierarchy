@@ -1,6 +1,6 @@
 package cz.george.superfastscanner;
 
-import cz.george.superfastscanner.datastructures.ParsedClassesContainer;
+import cz.george.superfastscanner.parsedbytecode.ParsedClassesContainer;
 import cz.george.superfastscanner.parsedbytecode.clazz.Method;
 import cz.george.superfastscanner.datastructures.Node;
 

@@ -3,9 +3,6 @@ package cz.george.superfastscanner.datastructures;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Created by John on 4/14/2017.
- */
 public class OneToOneHashMap<Key, Value> {
     protected Map<Key, Value> map = new HashMap<>();
     private StringBuilder sb = new StringBuilder();

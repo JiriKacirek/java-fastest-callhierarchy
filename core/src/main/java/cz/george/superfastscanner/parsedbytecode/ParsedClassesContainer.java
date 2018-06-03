@@ -1,4 +1,4 @@
-package cz.george.superfastscanner.datastructures;
+package cz.george.superfastscanner.parsedbytecode;
 
 import cz.george.superfastscanner.parsedbytecode.clazz.Clazz;
 import cz.george.superfastscanner.parsedbytecode.hashmap.ClassesHashMap;

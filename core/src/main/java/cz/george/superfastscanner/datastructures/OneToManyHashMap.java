@@ -2,9 +2,6 @@ package cz.george.superfastscanner.datastructures;
 
 import java.util.*;
 
-/**
- * Created by John on 4/14/2017.
- */
 public abstract class OneToManyHashMap<Key, Value, Collect extends Collection<Value>> {
     protected Map<Key, Collect> map = new HashMap<>();
     protected StringBuilder sb = new StringBuilder();

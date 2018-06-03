@@ -1,17 +1,16 @@
-package cz.george.superfastscanner.hierarchytree.hashmap;
+package cz.george.superfastscanner.hierarchytree;
 
 import cz.george.superfastscanner.parsedbytecode.clazz.Method;
-import cz.george.superfastscanner.datastructures.HashSetHashMap;
-import cz.george.superfastscanner.hierarchytree.ClassInheritanceNode;
+import cz.george.superfastscanner.datastructures.HashMapHashSet;
 
 import java.util.*;
 
 /**
  * Hashmap for Inheritance hierarchytree tree.
  */
-public class InheritanceHierarchyHashMap extends HashSetHashMap<String, Method> {
+public class InheritanceHierarchyHashMapHashSet extends HashMapHashSet<String, Method> {
 
-    public InheritanceHierarchyHashMap(ClassInheritanceNode interfacesTree) {
+    public InheritanceHierarchyHashMapHashSet(ClassInheritanceNode interfacesTree) {
         initializeMap(interfacesTree);
     }
 

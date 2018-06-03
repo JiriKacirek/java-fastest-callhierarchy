@@ -18,7 +18,6 @@ public class Clazz {
         this.name = name; this.superName = superName; this.interfaces = interfaces;
     }
 
-
     @Override
     public int hashCode() {
         return name.toString().hashCode();

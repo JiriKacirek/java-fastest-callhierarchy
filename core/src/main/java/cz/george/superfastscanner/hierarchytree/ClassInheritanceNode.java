@@ -1,7 +1,7 @@
 package cz.george.superfastscanner.hierarchytree;
 
 import cz.george.superfastscanner.AnalysisUtils;
-import cz.george.superfastscanner.datastructures.ParsedClassesContainer;
+import cz.george.superfastscanner.parsedbytecode.ParsedClassesContainer;
 import cz.george.superfastscanner.datastructures.Node;
 import cz.george.superfastscanner.parsedbytecode.clazz.Clazz;
 import cz.george.superfastscanner.parsedbytecode.clazz.Method;
@@ -16,7 +16,10 @@ import java.util.Set;
  *
  * For example: if interface A (which is also considered as class) extends interface B, then A have same methods as B.
  * Unfortunatelly, this inherited methods are not mentioned in class parsedbytecode. That's the reason why they have to be
- * obtained by thos class.
+ * obtained.
+ *
+ * // This functionality should be refactored in the feature as it seems it's redundat and possibly slower. Instead
+ * // all loaded Clazz objects should be after-processed for resolving of inherited methods.
  */
 public class ClassInheritanceNode extends Node<Clazz> {
     private @Getter Set<ClassInheritanceNode> interfaces = new HashSet<>(); // although interface can only Extends, it's considered as Implements

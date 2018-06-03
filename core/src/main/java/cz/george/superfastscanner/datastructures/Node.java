@@ -6,9 +6,6 @@ import lombok.Getter;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * Created by John on 4/14/2017.
- */
 @EqualsAndHashCode
 public class Node<Value> {
 

@@ -2,15 +2,18 @@ package cz.george.superfastscanner;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.URLDecoder;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.Set;
 import java.util.jar.JarFile;
 
-import cz.george.superfastscanner.datastructures.ParsedClassesContainer;
+import cz.george.superfastscanner.parsedbytecode.ParsedClassesContainer;
 import cz.george.superfastscanner.parsedbytecode.JARLoader;
 import cz.george.superfastscanner.parsedbytecode.clazz.Clazz;
 import cz.george.superfastscanner.parsedbytecode.clazz.Method;
 import cz.george.superfastscanner.hierarchytree.ClassInheritanceNode;
-import cz.george.superfastscanner.hierarchytree.hashmap.InheritanceHierarchyHashMap;
+import cz.george.superfastscanner.hierarchytree.InheritanceHierarchyHashMapHashSet;
 import cz.george.superfastscanner.utils.Utils;
 import cz.george.superfastscanner.datastructures.Node;
 import lombok.var;
@@ -26,8 +29,12 @@ public class JavaScannerTest {
 
 	@Before
 	public void init() throws IOException {
-		var f = new File("C:\\Users\\Jiri Kacirek\\Desktop\\java-fastest-callhierarchy\\test-app\\target\\testmodule-1.0.1.jar");
-		jarFile = new JarFile(f);
+		String runPath = JavaScannerTest.class.getProtectionDomain().getCodeSource().getLocation().getPath();
+		runPath = URLDecoder.decode(runPath, "UTF-8");
+
+		File testJAR = new File(runPath + File.separator + "testmodule-1.0.1.jar");
+
+		jarFile = new JarFile(testJAR);
 		jarLoader = new JARLoader(jarFile);
 	}
 	
@@ -48,7 +55,7 @@ public class JavaScannerTest {
 		System.out.println(tool.methodsMap.toString());
 		ClassInheritanceNode node = new ClassInheritanceNode(new Clazz("cz/george/testmodule/A", null, null),  tool);
 		System.out.println(tool.methodsMap.toString());
-		InheritanceHierarchyHashMap inheritanceHierarchyMap = new InheritanceHierarchyHashMap(node);
+		InheritanceHierarchyHashMapHashSet inheritanceHierarchyMap = new InheritanceHierarchyHashMapHashSet(node);
 		System.out.println(inheritanceHierarchyMap.toString());
 	}
 }

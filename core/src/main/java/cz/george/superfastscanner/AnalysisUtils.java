@@ -1,9 +1,9 @@
 package cz.george.superfastscanner;
 
-import cz.george.superfastscanner.datastructures.ParsedClassesContainer;
+import cz.george.superfastscanner.parsedbytecode.ParsedClassesContainer;
 import cz.george.superfastscanner.parsedbytecode.clazz.*;
 import cz.george.superfastscanner.hierarchytree.ClassInheritanceNode;
-import cz.george.superfastscanner.hierarchytree.hashmap.InheritanceHierarchyHashMap;
+import cz.george.superfastscanner.hierarchytree.InheritanceHierarchyHashMapHashSet;
 import lombok.var;
 
 import java.util.*;
@@ -17,6 +17,7 @@ public class AnalysisUtils {
     }
 
     /**
+     * The most inmportant method for find usages and generating usages hierarchy.
      * @param method For which callers have to be found
      * @return Empty Set if any caller has been found
      */
@@ -24,29 +25,31 @@ public class AnalysisUtils {
         if (method.getOwnerClass().getName() == null)
             return null;
 
-        // instrcutionsMap have hashcode from Instruction, so I convert Method to Instruction for confidence...
+        // It will try to find this Method instance between Instructions. Therefore I will convert Method to Instruction
+        // for confidence of equals()
         var instruction = new Instruction(
                 method.getName(),
                 method.getDescription(),
                 method.getOwnerClass().getName(),
                 null);
 
+        // 1. Find usages in all method bodies.
         // Obtain complete list of instructions matching with given Instruction
         List<Instruction> completeInstructionsOccurence = parsedClassesContainer.instructionsMap.getMap().get(instruction);
 
+        // 2. Find usages in all parrents (including interfaces).
         // Obtain complete list of given method used in parrents and iterfaces of Class. It will be considered also
         // as usages.
         Set<Method> completeParrentsOccurencee = null;
-        var methodNamesMap = new InheritanceHierarchyHashMap(new ClassInheritanceNode(method.getOwnerClass(), parsedClassesContainer));
+        var methodNamesMap = new InheritanceHierarchyHashMapHashSet(new ClassInheritanceNode(method.getOwnerClass(),
+                parsedClassesContainer));
         completeParrentsOccurencee = methodNamesMap.getMap().get(method.getName() + " " + method.getDescription());
 
         // Remove itself from this hierarchy
         completeParrentsOccurencee.remove(method);
 
-
         Set<Method> usages = new HashSet<>();
 
-        // Usage is method, in which instrcution is used
         if (completeInstructionsOccurence != null)
             for (Instruction i : completeInstructionsOccurence) {
                 usages.add(i.getOwnerMethod());

@@ -1,11 +1,10 @@
 package cz.george.superfastscanner.datastructures;
-
-        import java.util.*;
+import java.util.*;
 
 /**
- * Created by John on 4/14/2017.
+ * HashMap<Key, HashSet<Value> >
  */
-public class HashSetHashMap<Key, Value> extends OneToManyHashMap<Key, Value, Set<Value>> {
+public class HashMapHashSet<Key, Value> extends OneToManyHashMap<Key, Value, Set<Value>> {
     @Override
     protected Set createCollectionInstance() {
         return new HashSet<>();
