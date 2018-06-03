@@ -1,22 +1,27 @@
-This is fastest Method Call Hierarchy generator ever made for Java. :)
+This is fastest Method Call Hierarchy generator on GitHub. :) (as I'm aware)
 
 Quick start
 ***********
-
+Use case: you want quickly write to console call hierarchy above some JAR. Follow this steps:
 1. Download or Clone this repository
-2. Open project in IntelliJ IDEA (it should work anyware but I've hot tested it)
-3. Look in /core/src/test/java/JavaScannerTest
+2. Open project in IntelliJ IDEA (It's not nessesary but project is build and configured in this IDE)
+3. Look in /core/src/test/java/QuickStartGuideIT where is prepared example for testing JAR file.
+4. Modify this unit test to load your own JAR. Done.
+
 
 PROJECT STATUS:
-- Method call hierarchy for the given method bytecode signature is working and it had been tested on very complex banking application with success
-- There isn't any Quick Start solution for users right now, it's just very raw library
-- All Nested Classes all ignored - support will be implemented soon
-- Polymorphism is supported for sure but resolving of concrete instance is impossible **
+- Method call hierarchy for the given method bytecode signature is working but it was not tested on more complerx JAR
+- All Nested Classes all ignored - support will be implemented (one day..)
+- Polymorphism is supported for sure but resolving of concrete instance is impossible. Read bellow.
 
+This generator is very fast which is also the reason why it have been created. It's fastest then IntelliJ Idea 
+generator or Eclipse generator. It's fastest then all GitHub generators I've seen. Generating method call hierarchy on 
+my complex banking project which took hours in the IntelliJ will took few minutes with this generator.
 
-This generator is very fast which is also the reason why it have been created. It's fastest then IntelliJ Idea generator or Eclipse generator. It's fastest then all GitHub generators I've seen. Generating method call hierarchy on my complex banking project which took hours in the IntelliJ will took few seconds with this generator.
-
-The reason why it is so fast is that this generator works directly on Java bytecode (so .jar or .war file is input) and which much more important it completely load the JAR files into the memory. Once *.class files from JAR file are parsed and collected into various Hashmaps, find conrecte method call hierarchy (which means recursively find usages of some methods) is really fast.
+The reason why it is so fast is that this generator works directly on Java bytecode (so .jar or .war file is input) 
+and what is much more important it completely loads the JAR file into the memory, parse all classes into HashMaps and 
+only then is looking for method usages. This is quite the opossite to current IDE generators which seems to simply 
+iterate over the classes again and again.
 
 To generate method call hierarchy just 2 things are needed: 
 
@@ -25,7 +30,8 @@ To generate method call hierarchy just 2 things are needed:
 
 Method signature:
 *****************
-This application works with bytecode. If you want to know how yours method signature should looks like, find compiled .class of our Class and you must will be able to get something like this:
+This application works with bytecode. If you want to know how yours method signature should looks like, find 
+compiled .class of our Class and you must will be able to get something like this:
 
 com/some/package/ClassOfYourMethod nameOfYourMethod (Ljava/util/List;Ljava/lang/Long;Ljava/lang/Boolean;)Ljava/util/List;
 
