@@ -1,6 +1,6 @@
 package cz.george.superfastscanner.parsedbytecode.hashmap;
 
-import cz.george.superfastscanner.utils.map.ArrayListHashMap;
+import cz.george.superfastscanner.datastructures.ArrayListHashMap;
 import cz.george.superfastscanner.parsedbytecode.clazz.*;
 
 import java.util.*;

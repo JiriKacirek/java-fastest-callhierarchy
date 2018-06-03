@@ -1,4 +1,4 @@
-package cz.george.superfastscanner.utils.map;
+package cz.george.superfastscanner.datastructures;
 
 import java.util.HashMap;
 import java.util.Map;

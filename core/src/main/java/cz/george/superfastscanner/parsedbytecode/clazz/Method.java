@@ -8,7 +8,6 @@ import static cz.george.superfastscanner.parsedbytecode.clazz.Clazz.*;
 
 public class Method {
     private @Getter Clazz ownerClass;
-
     private @Getter String name;
     private @Getter String description;
     private @Getter Set<Instruction> instructions = new HashSet<Instruction>();
@@ -46,6 +45,6 @@ public class Method {
 
     @Override
     public String toString() {
-        return append(new StringBuilder(), ownerClass.getName(), " ", name, " ", description).toString();
+        return  ownerClass.getName() + " " + name + " " + description;
     }
 }

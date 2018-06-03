@@ -1,8 +1,8 @@
 package cz.george.superfastscanner.hierarchytree;
 
 import cz.george.superfastscanner.AnalysisUtils;
-import cz.george.superfastscanner.parsedbytecode.HashMaps;
-import cz.george.superfastscanner.utils.tree.Node;
+import cz.george.superfastscanner.datastructures.ParsedClassesContainer;
+import cz.george.superfastscanner.datastructures.Node;
 import cz.george.superfastscanner.parsedbytecode.clazz.Clazz;
 import cz.george.superfastscanner.parsedbytecode.clazz.Method;
 import lombok.Getter;
@@ -21,13 +21,13 @@ import java.util.Set;
 public class ClassInheritanceNode extends Node<Clazz> {
     private @Getter Set<ClassInheritanceNode> interfaces = new HashSet<>(); // although interface can only Extends, it's considered as Implements
     private @Getter ClassInheritanceNode superClass = null;
-    private HashMaps hashMaps;
+    private ParsedClassesContainer parsedClassesContainer;
     private AnalysisUtils analysisUtils;
 
-    public ClassInheritanceNode(Clazz clazz, HashMaps hashMaps) {
+    public ClassInheritanceNode(Clazz clazz, ParsedClassesContainer parsedClassesContainer) {
         super(clazz);
-        this.hashMaps = hashMaps;
-        this.analysisUtils = new AnalysisUtils(hashMaps);
+        this.parsedClassesContainer = parsedClassesContainer;
+        this.analysisUtils = new AnalysisUtils(parsedClassesContainer);
         setValue(clazz);
 
         enrichClazzMethods();
@@ -50,7 +50,7 @@ public class ClassInheritanceNode extends Node<Clazz> {
 
         Set<Clazz> interfaces = analysisUtils.findInterfaces(getValue());
         for(Clazz interfac : interfaces) {
-            this.interfaces.add(new ClassInheritanceNode(interfac, hashMaps)); // RECURSION
+            this.interfaces.add(new ClassInheritanceNode(interfac, parsedClassesContainer)); // RECURSION
         }
 
         // Bring down methods from parrent
@@ -73,7 +73,7 @@ public class ClassInheritanceNode extends Node<Clazz> {
 
         Clazz foundSuperClass = analysisUtils.findSuperClass(getValue());
         if(foundSuperClass != null) {
-            this.superClass = new ClassInheritanceNode(foundSuperClass, hashMaps); // RECURSION
+            this.superClass = new ClassInheritanceNode(foundSuperClass, parsedClassesContainer); // RECURSION
 
             // Bring methods from parrent
             for (Method method : foundSuperClass.getMethods()) {

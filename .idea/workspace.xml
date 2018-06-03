@@ -2,49 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5c6c9f8-87a1-4feb-968a-a81536697d46" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_22.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/HierarchyGen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/utils/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/java-fastest-callhierarchy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/java-fastest-callhierarchy.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/AnalysisUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/AnalysisUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/HashMaps.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/HashMaps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/hierarchytree/CallersTreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/hierarchytree/CallerNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/HierarchyGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/HierarchyGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/hierarchytree/CallerNode.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/hierarchytree/ClassInheritanceNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/hierarchytree/ClassInheritanceNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/hierarchytree/hashmap/InheritanceHierarchyHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/hierarchytree/hashmap/InheritanceHierarchyHashMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/ClassParserVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/ClassParserVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/JARLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/JARLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/HashMaps.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/ParsedClassesContainer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/clazz/Clazz.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/clazz/Clazz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/clazz/Instruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/clazz/Instruction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/clazz/Method.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/clazz/Method.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/hashmap/ClassesHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/hashmap/ClassesHashMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/hashmap/InstructionsHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/hashmap/InstructionsHashMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/hashmap/MethodNamesHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/hashmap/MethodNamesHashMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/hashmap/MethodsMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/hashmap/MethodsMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/package-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/utils/tree/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/utils/tree/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/utils/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/utils/map/ArrayListHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/ArrayListHashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/utils/map/HashSetHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/HashSetHashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/utils/map/OneToManyHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/OneToManyHashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/utils/map/OneToOneHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/OneToOneHashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/utils/tree/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/test/java/cz/george/superfastscanner/JavaScannerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/java/cz/george/superfastscanner/JavaScannerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/superfastscanner.iml" beforeDir="false" afterPath="$PROJECT_DIR$/core/superfastscanner.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/AnalysisUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/AnalysisUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/HashMaps.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/hierarchytree/CallersTreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/HierarchyGen.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/HierarchyGen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/hierarchytree/CallerNode.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/hierarchytree/ClassInheritanceNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/hierarchytree/ClassInheritanceNode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/hierarchytree/hashmap/InheritanceHierarchyHashMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/hierarchytree/hashmap/InheritanceHierarchyHashMap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/parsedbytecode/ClassParserVisitor$CompleteMethodVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/parsedbytecode/ClassParserVisitor$CompleteMethodVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/parsedbytecode/ClassParserVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/parsedbytecode/ClassParserVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/parsedbytecode/JARLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/parsedbytecode/JARLoader.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/parsedbytecode/clazz/Clazz.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/parsedbytecode/clazz/Clazz.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/parsedbytecode/clazz/Instruction.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/parsedbytecode/clazz/Instruction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/parsedbytecode/clazz/Method.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/parsedbytecode/clazz/Method.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/parsedbytecode/hashmap/ClassesHashMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/parsedbytecode/hashmap/ClassesHashMap.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/parsedbytecode/hashmap/InstructionsHashMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/parsedbytecode/hashmap/InstructionsHashMap.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/parsedbytecode/hashmap/MethodNamesHashMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/parsedbytecode/hashmap/MethodNamesHashMap.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/parsedbytecode/hashmap/MethodsMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/parsedbytecode/hashmap/MethodsMap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/utils/tree/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/utils/tree/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/surefire-reports/TEST-cz.george.superfastscanner.JavaScannerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/surefire-reports/TEST-cz.george.superfastscanner.JavaScannerTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/surefire-reports/cz.george.superfastscanner.JavaScannerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/surefire-reports/cz.george.superfastscanner.JavaScannerTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/utils/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/cz/george/superfastscanner/utils/Utils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/test-classes/cz/george/superfastscanner/JavaScannerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/test-classes/cz/george/superfastscanner/JavaScannerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-app/testmodule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/test-app/testmodule.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/core/target/" />
@@ -60,147 +50,104 @@
     <favorites_list name="java-fastest-callhierarchy" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.42857143">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/utils/Utils.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="136">
-                  <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-                  <folding>
-                    <element signature="e#172#173#0" expanded="true" />
-                    <element signature="e#217#218#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="HashMaps.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/HashMaps.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="JavaScannerTest.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/core/src/test/java/cz/george/superfastscanner/JavaScannerTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="123">
-                  <caret line="27" column="43" lean-forward="true" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ClassInheritanceNode.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/hierarchytree/ClassInheritanceNode.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1343">
-                  <caret line="87" selection-start-line="87" selection-end-line="87" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="CallerNode.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/hierarchytree/CallerNode.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="364">
-                  <caret line="73" column="53" selection-start-line="69" selection-start-column="8" selection-end-line="73" selection-end-column="53" />
-                  <folding>
-                    <element signature="e#671#672#0" expanded="true" />
-                    <element signature="e#713#714#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="AnalysisUtils.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/AnalysisUtils.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-561">
-                  <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
-                  <folding>
-                    <element signature="e#3057#3058#0" expanded="true" />
-                    <element signature="e#3120#3121#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/utils/tree/Node.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="425">
-                  <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
-                  <folding>
-                    <element signature="e#323#324#0" expanded="true" />
-                    <element signature="e#357#358#0" expanded="true" />
-                    <element signature="e#766#767#0" expanded="true" />
-                    <element signature="e#794#795#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="AbstractSet.java" pinned="false" current-in-tab="false">
-            <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/util/AbstractSet.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="189">
-                  <caret line="125" selection-start-line="125" selection-end-line="125" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="HierarchyGen.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/HierarchyGen.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="130">
-                  <caret line="29" column="38" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="38" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#767#775#0" expanded="true" />
-                    <element signature="e#1083#1091#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="List.java" pinned="false" current-in-tab="false">
-            <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/util/List.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="213">
-                  <caret line="144" column="12" selection-start-line="144" selection-start-column="12" selection-end-line="144" selection-end-column="12" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Method.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/clazz/Method.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-183">
-                  <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Clazz.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/clazz/Clazz.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="102">
-                  <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="AnalysisUtils.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/AnalysisUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-446">
+              <caret line="37" column="11" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ParsedClassesContainer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/ParsedClassesContainer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/utils/Utils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+              <folding>
+                <element signature="e#172#173#0" expanded="true" />
+                <element signature="e#217#218#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/Node.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="e#323#324#0" expanded="true" />
+                <element signature="e#357#358#0" expanded="true" />
+                <element signature="e#766#767#0" expanded="true" />
+                <element signature="e#794#795#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArrayListHashMap.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/ArrayListHashMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HashSetHashMap.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/HashSetHashMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OneToManyHashMap.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/OneToManyHashMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-72">
+              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OneToOneHashMap.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/OneToOneHashMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HierarchyGen.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/HierarchyGen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="29" column="38" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#767#775#0" expanded="true" />
+                <element signature="e#1083#1091#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -209,6 +156,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>null</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -233,23 +185,25 @@
         <option value="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/JARLoader.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/hashmap/MethodsMap.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/clazz/Clazz.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/clazz/Instruction.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/hashmap/MethodNamesHashMap.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/clazz/Method.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/hashmap/InstructionsHashMap.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/hierarchytree/hashmap/InheritanceHierarchyHashMap.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/ClassParserVisitor.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/hierarchytree/CallersTreeNode.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/hierarchytree/CallerNode.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/AnalysisUtils.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/HashMaps.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/hierarchytree/ClassInheritanceNode.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/hierarchytree/CalleNode.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/HierarchyGen.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/utils/Utils.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/utils/tree/Node.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/clazz/Clazz.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/clazz/Method.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/hierarchytree/CallerNode.java" />
         <option value="$PROJECT_DIR$/core/src/test/java/cz/george/superfastscanner/JavaScannerTest.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/AnalysisUtils.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/utils/Utils.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/HashMaps.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/ParsedClassesContainer.java" />
       </list>
     </option>
   </component>
@@ -303,7 +257,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-4" />
     <option name="width" value="1932" />
     <option name="height" value="1092" />
@@ -356,6 +310,36 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="superfastscanner" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-fastest-callhierarchy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-fastest-callhierarchy" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="superfastscanner" type="462c0819:PsiDirectoryNode" />
+              <item name="hierarchytree" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-fastest-callhierarchy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-fastest-callhierarchy" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="superfastscanner" type="462c0819:PsiDirectoryNode" />
+              <item name="parsedbytecode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-fastest-callhierarchy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-fastest-callhierarchy" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="superfastscanner" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java-fastest-callhierarchy" type="b2602c69:ProjectViewProjectNode" />
@@ -442,7 +426,7 @@
       <module name="superfastscanner" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cz.george.superfastscanner.parsedbytecode.*" />
+          <option name="PATTERN" value="cz.george.superfastscanner.datastructures.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -465,7 +449,7 @@
       <module name="superfastscanner" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cz.george.superfastscanner.parsedbytecode.*" />
+          <option name="PATTERN" value="cz.george.superfastscanner.datastructures.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -488,7 +472,7 @@
       <module name="superfastscanner" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cz.george.superfastscanner.parsedbytecode.*" />
+          <option name="PATTERN" value="cz.george.superfastscanner.datastructures.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -511,7 +495,7 @@
       <module name="superfastscanner" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cz.george.superfastscanner.parsedbytecode.*" />
+          <option name="PATTERN" value="cz.george.superfastscanner.datastructures.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -657,17 +641,11 @@
       <workItem from="1527934727194" duration="10952000" />
       <workItem from="1527950610603" duration="4151000" />
       <workItem from="1527955749296" duration="285000" />
-      <workItem from="1527956063906" duration="14516000" />
+      <workItem from="1527956063906" duration="19148000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="JavaScannerTest_printCallers - 2018.06.02 at 21h 46m 24s.xml">
-      <configuration name="JavaScannerTest.printCallers" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JavaScannerTest_printCallers - 2018.06.02 at 21h 55m 57s.xml">
-      <configuration name="JavaScannerTest.printCallers" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="JavaScannerTest_printCallers - 2018.06.02 at 21h 56m 00s.xml">
       <configuration name="JavaScannerTest.printCallers" configurationId="JUnit" />
     </history-entry>
@@ -692,12 +670,19 @@
     <history-entry file="JavaScannerTest_printCallers - 2018.06.02 at 22h 18m 32s.xml">
       <configuration name="JavaScannerTest.printCallers" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="JavaScannerTest_printCallers - 2018.06.02 at 23h 03m 35s.xml">
+      <configuration name="JavaScannerTest.printCallers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JavaScannerTest_printCallers - 2018.06.03 at 10h 48m 19s.xml">
+      <configuration name="JavaScannerTest.printCallers" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29904000" />
+    <option name="totallyTimeSpent" value="34536000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -705,17 +690,17 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.41875" side_tool="true" visible="true" weight="0.20772442" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.41875" side_tool="true" weight="0.20772442" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.14757709" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.58125" visible="true" weight="0.20772442" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.58125" weight="0.20772442" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7570093" visible="true" weight="0.16510417" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7570093" visible="true" weight="0.23697917" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49791667" weight="0.32985386" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49791667" visible="true" weight="0.32985386" />
       <window_info id="Structure" order="1" sideWeight="0.24299066" side_tool="true" weight="0.16510417" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -755,7 +740,7 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/HashMaps.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/ParsedClassesContainer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
@@ -769,35 +754,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/utils/tree/Node.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/Node.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/utils/map/ArrayListHashMap.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/ArrayListHashMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/utils/map/HashSetHashMap.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/HashSetHashMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/utils/map/OneToManyHashMap.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/OneToManyHashMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/utils/map/OneToOneHashMap.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/OneToOneHashMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
@@ -899,38 +884,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/utils/map/HashSetHashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/utils/map/OneToManyHashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="488">
           <caret line="164" column="11" selection-start-line="164" selection-start-column="11" selection-end-line="164" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/utils/map/OneToOneHashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/utils/map/ArrayListHashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1000,34 +957,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/hierarchytree/hashmap/InheritanceHierarchyHashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/HashMaps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/clazz/Method.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-183">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/clazz/Clazz.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/util/List.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
@@ -1042,13 +971,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/hierarchytree/ClassInheritanceNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1343">
-          <caret line="87" selection-start-line="87" selection-end-line="87" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/hierarchytree/CalleNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1056,13 +978,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/hierarchytree/CallerNode.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/clazz/Clazz.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="73" column="53" selection-start-line="69" selection-start-column="8" selection-end-line="73" selection-end-column="53" />
+        <state relative-caret-position="408">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/clazz/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
           <folding>
-            <element signature="e#671#672#0" expanded="true" />
-            <element signature="e#713#714#0" expanded="true" />
+            <element signature="e#1411#1412#0" expanded="true" />
+            <element signature="e#1488#1489#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/hierarchytree/ClassInheritanceNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/hierarchytree/hashmap/InheritanceHierarchyHashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/test/java/cz/george/superfastscanner/JavaScannerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/HierarchyGen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="29" column="38" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#767#775#0" expanded="true" />
+            <element signature="e#1083#1091#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1078,10 +1040,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/utils/tree/Node.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/ParsedClassesContainer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+        <state relative-caret-position="255">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="e#323#324#0" expanded="true" />
             <element signature="e#357#358#0" expanded="true" />
@@ -1091,33 +1060,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/test/java/cz/george/superfastscanner/JavaScannerTest.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/HashSetHashMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="27" column="43" lean-forward="true" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/HierarchyGen.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/ArrayListHashMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="29" column="38" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#767#775#0" expanded="true" />
-            <element signature="e#1083#1091#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/OneToOneHashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/datastructures/OneToManyHashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-72">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/hierarchytree/CallerNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="51" column="7" lean-forward="true" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/AnalysisUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-561">
-          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
-          <folding>
-            <element signature="e#3057#3058#0" expanded="true" />
-            <element signature="e#3120#3121#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-446">
+          <caret line="37" column="11" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
         </state>
       </provider>
     </entry>

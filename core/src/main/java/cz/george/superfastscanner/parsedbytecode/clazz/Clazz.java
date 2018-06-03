@@ -33,11 +33,4 @@ public class Clazz {
     public String toString() {
         return name != null ? name : "null";
     }
-
-    protected static StringBuilder append(StringBuilder sb, String... strings) {
-        Arrays.stream(strings).forEach(str -> sb.append( str != null ? str : "null" ));
-        return sb;
-    }
-
-
 }

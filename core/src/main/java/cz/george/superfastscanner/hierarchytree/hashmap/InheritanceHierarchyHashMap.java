@@ -1,7 +1,7 @@
 package cz.george.superfastscanner.hierarchytree.hashmap;
 
 import cz.george.superfastscanner.parsedbytecode.clazz.Method;
-import cz.george.superfastscanner.utils.map.HashSetHashMap;
+import cz.george.superfastscanner.datastructures.HashSetHashMap;
 import cz.george.superfastscanner.hierarchytree.ClassInheritanceNode;
 
 import java.util.*;

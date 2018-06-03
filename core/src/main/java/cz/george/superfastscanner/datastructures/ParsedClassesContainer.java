@@ -1,4 +1,4 @@
-package cz.george.superfastscanner.parsedbytecode;
+package cz.george.superfastscanner.datastructures;
 
 import cz.george.superfastscanner.parsedbytecode.clazz.Clazz;
 import cz.george.superfastscanner.parsedbytecode.hashmap.ClassesHashMap;
@@ -7,12 +7,12 @@ import cz.george.superfastscanner.parsedbytecode.hashmap.MethodsMap;
 
 import java.util.Set;
 
-public class HashMaps {
+public class ParsedClassesContainer {
     public MethodsMap methodsMap;
     public ClassesHashMap classesHashMap;
     public InstructionsHashMap instructionsMap;
 
-    public HashMaps(Set<Clazz> parsedBinaryClasses) {
+    public ParsedClassesContainer(Set<Clazz> parsedBinaryClasses) {
         methodsMap = new MethodsMap(parsedBinaryClasses);
         classesHashMap = new ClassesHashMap(parsedBinaryClasses);
         instructionsMap = new InstructionsHashMap(parsedBinaryClasses);

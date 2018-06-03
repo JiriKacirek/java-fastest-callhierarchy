@@ -1,12 +1,9 @@
-package cz.george.superfastscanner.utils.tree;
+package cz.george.superfastscanner.datastructures;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
-import lombok.ToString;
 
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 /**

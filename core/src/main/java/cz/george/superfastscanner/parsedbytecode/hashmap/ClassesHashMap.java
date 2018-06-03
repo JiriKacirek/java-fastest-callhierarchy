@@ -1,6 +1,6 @@
 package cz.george.superfastscanner.parsedbytecode.hashmap;
 
-import cz.george.superfastscanner.utils.map.OneToOneHashMap;
+import cz.george.superfastscanner.datastructures.OneToOneHashMap;
 import cz.george.superfastscanner.parsedbytecode.clazz.Clazz;
 
 import java.util.Set;

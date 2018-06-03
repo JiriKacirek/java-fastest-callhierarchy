@@ -1,6 +1,6 @@
 package cz.george.superfastscanner.utils;
 
-import cz.george.superfastscanner.utils.tree.Node;
+import cz.george.superfastscanner.datastructures.Node;
 
 public class Utils {
 

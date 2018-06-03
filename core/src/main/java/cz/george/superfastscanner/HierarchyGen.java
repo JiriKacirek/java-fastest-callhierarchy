@@ -1,8 +1,8 @@
 package cz.george.superfastscanner;
 
-import cz.george.superfastscanner.parsedbytecode.HashMaps;
+import cz.george.superfastscanner.datastructures.ParsedClassesContainer;
 import cz.george.superfastscanner.parsedbytecode.clazz.Method;
-import cz.george.superfastscanner.utils.tree.Node;
+import cz.george.superfastscanner.datastructures.Node;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,8 +10,8 @@ import java.util.Set;
 
 // This class is specialization of AnalysisUtils and it provide extra methods for generating complete call hierarchies
 public class HierarchyGen extends AnalysisUtils {
-    public HierarchyGen(HashMaps hashMaps) {
-        super(hashMaps);
+    public HierarchyGen(ParsedClassesContainer parsedClassesContainer) {
+        super(parsedClassesContainer);
     }
 
     /**
