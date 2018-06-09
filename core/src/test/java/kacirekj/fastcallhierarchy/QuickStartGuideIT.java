@@ -6,8 +6,8 @@ import java.net.URLDecoder;
 import java.util.Set;
 import java.util.jar.JarFile;
 
+import kacirekj.fastcallhierarchy.parsedbytecode.ArtifactsLoader;
 import kacirekj.fastcallhierarchy.parsedbytecode.ParsedClassesContainer;
-import kacirekj.fastcallhierarchy.parsedbytecode.JARLoader;
 import kacirekj.fastcallhierarchy.parsedbytecode.clazz.Clazz;
 import kacirekj.fastcallhierarchy.parsedbytecode.clazz.Method;
 import kacirekj.fastcallhierarchy.utils.Utils;
@@ -17,7 +17,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class QuickStartGuideIT {
-	Method calle = new Method("cz/george/testmodule/A methodForA ()V"); // method call
+	Method calle = new Method("java/lang/Object hashCode ()I"); // method call
 	Set<Clazz> parsedClasses;
 
 	@Before
@@ -27,12 +27,13 @@ public class QuickStartGuideIT {
 				QuickStartGuideIT.class.getProtectionDomain().getCodeSource().getLocation().getPath(), "UTF-8");
 		File testJAR = new File( "C:\\Users\\Jiri Kacirek\\Downloads\\liferay-ce-portal-tomcat-7.0-ga6-20180320170724974.zip");
 
-		// 1. Create JARLoader.
+		// 1. Create ArtifactsLoader.
 		JarFile jarFile = new JarFile(testJAR);
 
 		// 2. Parse all classes in the given JAR
-		JARLoader jarLoader = new JARLoader(jarFile);
-		parsedClasses = jarLoader.parseArtifact(testJAR);
+		ArtifactsLoader jarLoader = new ArtifactsLoader();
+		//jarLoader.extractJar(testJAR, jarLoader.TEMP_DIR);
+		parsedClasses = jarLoader.parseFiles(jarLoader.TEMP_DIR);
 
 	}
 	

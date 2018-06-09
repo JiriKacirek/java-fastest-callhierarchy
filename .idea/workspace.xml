@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5c6c9f8-87a1-4feb-968a-a81536697d46" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/AnalysisUtilsHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/AnalysisUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/AnalysisUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/HierarchyGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/HierarchyGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/datastructures/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/datastructures/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/parsedbytecode/JARLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/parsedbytecode/ArtifactsLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/parsedbytecode/clazz/Clazz.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/parsedbytecode/clazz/Clazz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/utils/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/test/java/kacirekj/fastcallhierarchy/QuickStartGuideIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/java/kacirekj/fastcallhierarchy/QuickStartGuideIT.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,12 +26,12 @@
     <favorites_list name="java-fastest-callhierarchy" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="AnalysisUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/AnalysisUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="829">
-              <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
+            <state relative-caret-position="139">
+              <caret line="108" selection-start-line="108" selection-end-line="108" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -32,32 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Map.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/util/Map.java">
+      <file leaf-file-name="ClassInheritanceNode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/hierarchytree/ClassInheritanceNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="211" column="6" selection-start-line="211" selection-start-column="6" selection-end-line="211" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="119">
-                <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-              </first_editor>
-              <second_editor />
+            <state relative-caret-position="309">
+              <caret line="76" selection-start-line="76" selection-end-line="76" />
             </state>
           </provider>
         </entry>
@@ -65,35 +51,29 @@
       <file leaf-file-name="Clazz.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/parsedbytecode/clazz/Clazz.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="20" column="28" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="28" />
+            <state relative-caret-position="289">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
               <folding>
-                <element signature="e#558#559#0" expanded="true" />
-                <element signature="e#607#608#0" expanded="true" />
+                <element signature="e#603#604#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test-app/pom.xml">
+      <file leaf-file-name="Instruction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/parsedbytecode/clazz/Instruction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+            <state relative-caret-position="80">
+              <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="HierarchyGen.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/HierarchyGen.java">
+      <file leaf-file-name="ClassParserVisitor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/parsedbytecode/ClassParserVisitor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+            <state relative-caret-position="17">
+              <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,8 +84,8 @@
       <file leaf-file-name="QuickStartGuideIT.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/test/java/kacirekj/fastcallhierarchy/QuickStartGuideIT.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="26" column="99" selection-start-line="26" selection-start-column="99" selection-end-line="26" selection-end-column="99" />
+            <state relative-caret-position="560">
+              <caret line="49" column="63" selection-start-line="49" selection-start-column="63" selection-end-line="49" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -113,11 +93,54 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/pom.xml">
+      <file leaf-file-name="HierarchyGen.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/HierarchyGen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+            <state relative-caret-position="703">
+              <caret line="52" selection-start-line="52" selection-end-line="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/utils/Utils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+              <folding>
+                <element signature="e#581#582#0" expanded="true" />
+                <element signature="e#657#658#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/datastructures/Node.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding>
+                <element signature="e#439#440#0" expanded="true" />
+                <element signature="e#460#461#0" expanded="true" />
+                <element signature="e#959#960#0" expanded="true" />
+                <element signature="e#998#999#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AnalysisUtilsHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/AnalysisUtilsHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -128,8 +151,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="package-info" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -139,6 +162,8 @@
       <find>john</find>
       <find>walk</find>
       <find>pju</find>
+      <find>toString</find>
+      <find>hashCo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -147,11 +172,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test-app/src/main/java/cz/george/testmodule/SomeClass.java" />
-        <option value="$PROJECT_DIR$/test-app/src/main/java/cz/george/testmodule/K.java" />
-        <option value="$PROJECT_DIR$/test-app/src/main/java/cz/george/testmodule/O.java" />
-        <option value="$PROJECT_DIR$/test-app/src/main/java/cz/george/testmodule/L.java" />
-        <option value="$PROJECT_DIR$/test-app/src/main/java/cz/george/testmodule/Interface0.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/HashMaps.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/hashmap/MethodsMap.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/clazz/Instruction.java" />
@@ -189,15 +209,20 @@
         <option value="$PROJECT_DIR$/core/src/test/java/kacirekj/fastcallhierarchy/JavaScannerTest.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/parsedbytecode/JARLoader.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/parsedbytecode/clazz/Method.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/HierarchyGen.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/AnalysisUtils.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/parsedbytecode/clazz/Clazz.java" />
         <option value="$PROJECT_DIR$/core/pom.xml" />
         <option value="$PROJECT_DIR$/test-app/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/core/src/test/java/kacirekj/fastcallhierarchy/QuickStartIT.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/parsedbytecode/ArtifactsLoader.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/AnalysisUtils.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/parsedbytecode/clazz/Clazz.java" />
         <option value="$PROJECT_DIR$/core/src/test/java/kacirekj/fastcallhierarchy/QuickStartGuideIT.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/datastructures/Node.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/utils/Utils.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/utils/AnalysisUtilsHandler.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/HierarchyGen.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/AnalysisUtilsHandler.java" />
       </list>
     </option>
   </component>
@@ -286,6 +311,61 @@
               <item name="java-fastest-callhierarchy" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-fastest-callhierarchy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-fastest-callhierarchy" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-fastest-callhierarchy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-fastest-callhierarchy" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="fastcallhierarchy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-fastest-callhierarchy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-fastest-callhierarchy" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="fastcallhierarchy" type="462c0819:PsiDirectoryNode" />
+              <item name="parsedbytecode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-fastest-callhierarchy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-fastest-callhierarchy" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="fastcallhierarchy" type="462c0819:PsiDirectoryNode" />
+              <item name="parsedbytecode" type="462c0819:PsiDirectoryNode" />
+              <item name="clazz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-fastest-callhierarchy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-fastest-callhierarchy" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="fastcallhierarchy" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-fastest-callhierarchy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-fastest-callhierarchy" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -320,7 +400,46 @@
             </path>
             <path>
               <item name="java-fastest-callhierarchy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-fastest-callhierarchy" type="462c0819:PsiDirectoryNode" />
+              <item name="test-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-fastest-callhierarchy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-fastest-callhierarchy" type="462c0819:PsiDirectoryNode" />
+              <item name="test-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-fastest-callhierarchy" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="java-fastest-callhierarchy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="java-fastest-callhierarchy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-fastest-callhierarchy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-fastest-callhierarchy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -330,18 +449,22 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="findReal&#9;PSI&#9;JAVA://kacirekj.fastcallhierarchy.AnalysisUtils#findRealOccurenceInMap&#10;objec&#9;PSI&#9;JAVA://java.lang.Object" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/core" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="reference.idesettings.debugger.capture" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="kacirekj.fastcallhierarchy" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="cz.george.superfastscanner.hierarchytree" />
     </key>
@@ -635,43 +758,44 @@
       <workItem from="1527950610603" duration="4151000" />
       <workItem from="1527955749296" duration="285000" />
       <workItem from="1527956063906" duration="29173000" />
+      <workItem from="1528533416424" duration="9032000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="JavaScannerTest - 2018.06.03 at 12h 04m 28s.xml">
-      <configuration name="JavaScannerTest" configurationId="JUnit" />
+    <history-entry file="QuickStartGuideIT - 2018.06.09 at 12h 02m 33s.xml">
+      <configuration name="QuickStartGuideIT" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JavaScannerTest - 2018.06.03 at 12h 04m 43s.xml">
-      <configuration name="JavaScannerTest" configurationId="JUnit" />
+    <history-entry file="QuickStartGuideIT - 2018.06.09 at 12h 12m 36s.xml">
+      <configuration name="QuickStartGuideIT" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JavaScannerTest - 2018.06.03 at 12h 08m 02s.xml">
-      <configuration name="JavaScannerTest" configurationId="JUnit" />
+    <history-entry file="QuickStartGuideIT - 2018.06.09 at 12h 12m 56s.xml">
+      <configuration name="QuickStartGuideIT" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JavaScannerTest - 2018.06.03 at 12h 08m 23s.xml">
-      <configuration name="JavaScannerTest" configurationId="JUnit" />
+    <history-entry file="QuickStartGuideIT - 2018.06.09 at 12h 51m 18s.xml">
+      <configuration name="QuickStartGuideIT" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JavaScannerTest - 2018.06.03 at 12h 08m 30s.xml">
-      <configuration name="JavaScannerTest" configurationId="JUnit" />
+    <history-entry file="QuickStartGuideIT - 2018.06.09 at 12h 53m 13s.xml">
+      <configuration name="QuickStartGuideIT" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JavaScannerTest - 2018.06.03 at 12h 11m 30s.xml">
-      <configuration name="JavaScannerTest" configurationId="JUnit" />
+    <history-entry file="QuickStartGuideIT - 2018.06.09 at 12h 57m 25s.xml">
+      <configuration name="QuickStartGuideIT" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JavaScannerTest - 2018.06.03 at 12h 18m 18s.xml">
-      <configuration name="JavaScannerTest" configurationId="JUnit" />
+    <history-entry file="QuickStartGuideIT - 2018.06.09 at 12h 59m 57s.xml">
+      <configuration name="QuickStartGuideIT" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JavaScannerTest - 2018.06.03 at 12h 18m 32s.xml">
-      <configuration name="JavaScannerTest" configurationId="JUnit" />
+    <history-entry file="QuickStartGuideIT - 2018.06.09 at 13h 00m 45s.xml">
+      <configuration name="QuickStartGuideIT" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JavaScannerTest - 2018.06.03 at 12h 26m 40s.xml">
-      <configuration name="JavaScannerTest" configurationId="JUnit" />
+    <history-entry file="QuickStartGuideIT - 2018.06.09 at 13h 03m 33s.xml">
+      <configuration name="QuickStartGuideIT" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JavaScannerTest - 2018.06.03 at 12h 31m 29s.xml">
-      <configuration name="JavaScannerTest" configurationId="JUnit" />
+    <history-entry file="QuickStartGuideIT - 2018.06.09 at 13h 24m 15s.xml">
+      <configuration name="QuickStartGuideIT" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44561000" />
+    <option name="totallyTimeSpent" value="53593000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -687,12 +811,11 @@
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.14739583" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.58020836" visible="true" weight="0.3716075" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.58020836" weight="0.47286013" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7570093" visible="true" weight="0.171875" />
-      <window_info anchor="bottom" id="Inspection Results" weight="0.17954071" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.5416667" weight="0.4551148" />
       <window_info id="Structure" order="1" sideWeight="0.24299066" side_tool="true" weight="0.16510417" />
@@ -700,9 +823,10 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.3296875" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.5416667" weight="0.40501043" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.5416667" visible="true" weight="0.40501043" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection Results" order="8" weight="0.17954071" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -735,39 +859,18 @@
           <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url />
+          <line>52</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="9" />
+      <option name="time" value="14" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/datastructures/OneToManyHashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/datastructures/OneToOneHashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/hierarchytree/InheritanceHierarchyHashMapHashSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/hierarchytree/CallerNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="44" column="38" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/hierarchytree/CallerNode.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -832,9 +935,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/package-info.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/parsedbytecode/package-info.java" />
     <entry file="file://$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/parsedbytecode/hashmap/MethodsMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -870,27 +971,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/hierarchytree/CalleNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/hierarchytree/CallerNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="51" column="7" lean-forward="true" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/datastructures/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/hierarchytree/CalleNode.java" />
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/cz/george/superfastscanner/hierarchytree/CallerNode.java" />
     <entry file="file://$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/parsedbytecode/ParsedClassesContainer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -909,17 +991,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/utils/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-          <folding>
-            <element signature="e#183#184#0" expanded="true" />
-            <element signature="e#239#240#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -955,11 +1026,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#258#259#0" expanded="true" />
-            <element signature="e#298#299#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -967,10 +1033,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-          <folding>
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#301#302#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -981,30 +1043,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/hierarchytree/ClassInheritanceNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="39" column="61" lean-forward="true" selection-start-line="39" selection-start-column="61" selection-end-line="39" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/parsedbytecode/ClassParserVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/parsedbytecode/clazz/Instruction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/datastructures/OneToManyHashMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
@@ -1012,51 +1050,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/parsedbytecode/JARLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/parsedbytecode/clazz/Method.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="64" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/util/Map.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="3145">
           <caret line="211" column="6" selection-start-line="211" selection-start-column="6" selection-end-line="211" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/parsedbytecode/clazz/Clazz.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="20" column="28" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="28" />
-          <folding>
-            <element signature="e#558#559#0" expanded="true" />
-            <element signature="e#607#608#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/AnalysisUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="829">
-          <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/superfastscanner.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/core/superfastscanner.iml" />
     <entry file="file://$PROJECT_DIR$/test-app/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1084,17 +1085,130 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="119">
-            <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+          <first_editor relative-caret-position="85">
+            <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Downloads/TestUnzip/antlr/ByteBuffer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#700#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/parsedbytecode/ArtifactsLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="70" column="16" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
+          <folding>
+            <element signature="e#1559#1560#0" expanded="true" />
+            <element signature="e#1613#1614#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/parsedbytecode/clazz/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="64" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="99" column="28" selection-start-line="99" selection-start-column="22" selection-end-line="99" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/parsedbytecode/ClassParserVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/parsedbytecode/clazz/Instruction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/hierarchytree/ClassInheritanceNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/datastructures/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="e#439#440#0" expanded="true" />
+            <element signature="e#460#461#0" expanded="true" />
+            <element signature="e#959#960#0" expanded="true" />
+            <element signature="e#998#999#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/utils/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding>
+            <element signature="e#581#582#0" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/parsedbytecode/clazz/Clazz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#603#604#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/AnalysisUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/HierarchyGen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        <state relative-caret-position="703">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/kacirekj/fastcallhierarchy/AnalysisUtilsHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1103,8 +1217,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/test/java/kacirekj/fastcallhierarchy/QuickStartGuideIT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="26" column="99" selection-start-line="26" selection-start-column="99" selection-end-line="26" selection-end-column="99" />
+        <state relative-caret-position="560">
+          <caret line="49" column="63" selection-start-line="49" selection-start-column="63" selection-end-line="49" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1163,7 +1277,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>java-fastest-callhierarchy</last-edited>
+          <last-edited>fastcallhierarchy-testproject</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

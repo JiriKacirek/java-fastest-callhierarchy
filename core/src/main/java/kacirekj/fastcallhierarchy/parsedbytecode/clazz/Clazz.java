@@ -18,7 +18,7 @@ public class Clazz {
 
     @Override
     public int hashCode() {
-        return name.toString().hashCode();
+        return name != null ? name.toString().hashCode() : 0;
     }
 
     @Override

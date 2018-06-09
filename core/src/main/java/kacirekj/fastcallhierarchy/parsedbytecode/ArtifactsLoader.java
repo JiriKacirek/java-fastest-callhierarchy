@@ -8,39 +8,49 @@ import org.objectweb.asm.ClassReader;
 import java.io.*;
 import java.net.URLDecoder;
 import java.util.*;
-import java.util.jar.JarEntry;
-import java.util.jar.JarFile;
 import java.util.stream.Collectors;
 
 /**
  * Parse compiled classes in JAR file into Clazz objects.
  */
-public class JARLoader {
+public class ArtifactsLoader {
 
-    private File tempDir;
-    private JarFile jarFile;
-    private final String TEMP_DIR = "tmp";
+    public final File TEMP_DIR;
+    public final String TEMP_DIR_NAME = "tmp";
 
-    public JARLoader(JarFile jarFile) throws UnsupportedEncodingException {
+    public ArtifactsLoader() throws UnsupportedEncodingException {
         String currentLocation = URLDecoder.decode(
-                JARLoader.class.getProtectionDomain().getCodeSource().getLocation().getPath(),
+                ArtifactsLoader.class.getProtectionDomain().getCodeSource().getLocation().getPath(),
                 "UTF-8");
-        this.tempDir = new File(currentLocation + File.separator + TEMP_DIR);
-        this.jarFile = jarFile;
+        this.TEMP_DIR = new File(currentLocation + File.separator + TEMP_DIR_NAME);
     }
 
-    public Set<Clazz> parseArtifact(File artifact) throws IOException, ZipException {
-        // extract recursively all JAR in artifact into tempDir
-        extractAllJarsRecursively(artifact, tempDir);
+    public Set<Clazz> extractJarAndParseFiles(File jarFile) throws IOException, ZipException {
+        return extractJarAndParseFiles(jarFile, true);
+    }
 
-        // get all previously extracted files
-        List<File> allExtractedFiles = new ArrayList<>();
-        listFilesRecursively(tempDir, allExtractedFiles);
+    public Set<Clazz> extractJarAndParseFiles(File jarFile, boolean deleteTempFiles) throws IOException, ZipException {
+        extractJar(jarFile, TEMP_DIR);
 
+        Set<Clazz> parsedClasses = parseFiles(TEMP_DIR);
+
+        if(deleteTempFiles) {
+            TEMP_DIR.delete();
+        }
+
+        return parsedClasses;
+    }
+
+    public Set<Clazz> parseFiles(File directory) {
+        return parseFiles(listFiles(directory));
+    }
+
+    public Set<Clazz> parseFiles(List<File> filesToParse) {
         ClassParserVisitor completeClassVisitor = new ClassParserVisitor();
         Set<Clazz> parsedClasses = new HashSet<>();
 
-        allExtractedFiles.stream().filter(f -> f.getName().endsWith(".class"))
+
+        filesToParse.stream().filter(f -> f.getName().endsWith(".class"))
                 .forEach(clazz -> {
                     try (FileInputStream fis = new FileInputStream(clazz);
                          InputStream stream = new BufferedInputStream(fis, 1024);)
@@ -55,15 +65,10 @@ public class JARLoader {
                         e.printStackTrace();
                     }
                 });
-
-        // delete temporary dir
-
-        tempDir.delete();
-
         return parsedClasses;
     }
 
-    private void extractAllJarsRecursively(File input, File output) throws IOException, ZipException {
+    public void extractJar(File input, File output) throws IOException, ZipException {
         if (!output.exists()) {
             output.mkdir();
         }
@@ -96,8 +101,12 @@ public class JARLoader {
         }
     }
 
-    // get all the files from a directory
-    public void listFilesRecursively(File dir, List<File> files) {
+    private List<File> listFiles(File dir) {
+        List<File> allExtractedFiles = new ArrayList<>();
+        listFilesRecursively(TEMP_DIR, allExtractedFiles);
+        return allExtractedFiles;
+    }
+    private void listFilesRecursively(File dir, List<File> files) {
         File[] fList = dir.listFiles();
         for (File file : fList) {
             if (file.isFile()) {

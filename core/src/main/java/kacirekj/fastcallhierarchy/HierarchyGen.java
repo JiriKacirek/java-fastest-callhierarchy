@@ -3,6 +3,7 @@ package kacirekj.fastcallhierarchy;
 import kacirekj.fastcallhierarchy.parsedbytecode.ParsedClassesContainer;
 import kacirekj.fastcallhierarchy.parsedbytecode.clazz.Method;
 import kacirekj.fastcallhierarchy.datastructures.Node;
+import kacirekj.fastcallhierarchy.utils.Utils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,18 +20,40 @@ public class HierarchyGen extends AnalysisUtils {
      * @return Root node of method call hierarchy
      */
     public Node<Method> findCallHierarchy(Method callee) {
+        return findCallHierarchy(callee, new AnalysisUtilsHandler() {
+            @Override
+            public void onNewFindUsage(Node<Method> newCallerNode) {
+                Utils.print(newCallerNode.toString(), newCallerNode.getLayer());
+            }
+
+            @Override
+            public boolean shouldContinue(Node<Method> newCallerNode) {
+                return newCallerNode.getLayer() < 10 ? true : false;
+            }
+
+
+        });
+    }
+
+        public Node<Method> findCallHierarchy(Method callee, AnalysisUtilsHandler handler) {
         Node<Method> rootNode = new Node<>(callee);
-        findCallersRecursively(rootNode);
+        findCallersRecursively(rootNode, handler);
         return rootNode;
     }
 
-    private void findCallersRecursively(Node<Method> calleNode) {
+    private void findCallersRecursively(Node<Method> calleNode, AnalysisUtilsHandler handler) {
         Set<Method> callers = findUsages( calleNode.getValue() );
         for (Method caller : callers) {
             Node<Method> newCallerNode = new Node<Method>(caller, calleNode);
             calleNode.getChildNodes().add(newCallerNode);
-            if(!isMethodAlreadyCalledInCurrentPath(newCallerNode)) {
-                findCallersRecursively(newCallerNode); // RECURSION
+
+            handler.onNewFindUsage(newCallerNode);
+            boolean shouldContinue = handler.shouldContinue(newCallerNode);
+
+            if(shouldContinue) {
+                if(!isMethodAlreadyCalledInCurrentPath(newCallerNode)) {
+                    findCallersRecursively(newCallerNode, handler); // RECURSION
+                }
             }
         }
     }
