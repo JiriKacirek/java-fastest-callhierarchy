@@ -9,14 +9,18 @@ import java.util.Set;
 @EqualsAndHashCode
 public class Node<Value> {
 
-    protected @Getter
-    Value value;
-    protected @EqualsAndHashCode.Exclude
     @Getter
-    Node<Value> parrentNode; // Null means this is root
-    protected @EqualsAndHashCode.Exclude
+    protected Value value;
+
     @Getter
-    Set<Node<Value>> childNodes = new HashSet<>();
+    @EqualsAndHashCode.Exclude
+    protected Node<Value> parrentNode; // Null means this is root
+
+    @Getter
+    @EqualsAndHashCode.Exclude
+    protected Set<Node<Value>> childNodes = new HashSet<>();
+
+    @EqualsAndHashCode.Exclude
     protected Integer layer; // null means not loaded yet
 
     public Node(Value value) {

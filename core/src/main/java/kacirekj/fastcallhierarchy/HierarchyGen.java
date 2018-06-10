@@ -27,31 +27,29 @@ public class HierarchyGen extends AnalysisUtils {
             }
 
             @Override
-            public boolean shouldContinue(Node<Method> newCallerNode) {
-                return newCallerNode.getLayer() < 10 ? true : false;
+            public boolean onShouldContinue(Node<Method> newCallerNode) {
+                return newCallerNode.getLayer() < 35 ? true : false;
             }
-
-
         });
     }
 
-        public Node<Method> findCallHierarchy(Method callee, AnalysisUtilsHandler handler) {
+    public Node<Method> findCallHierarchy(Method callee, AnalysisUtilsHandler handler) {
         Node<Method> rootNode = new Node<>(callee);
         findCallersRecursively(rootNode, handler);
         return rootNode;
     }
 
     private void findCallersRecursively(Node<Method> calleNode, AnalysisUtilsHandler handler) {
-        Set<Method> callers = findUsages( calleNode.getValue() );
+        Set<Method> callers = findUsages(calleNode.getValue());
         for (Method caller : callers) {
             Node<Method> newCallerNode = new Node<Method>(caller, calleNode);
             calleNode.getChildNodes().add(newCallerNode);
 
-            handler.onNewFindUsage(newCallerNode);
-            boolean shouldContinue = handler.shouldContinue(newCallerNode);
+            handler.onNewFindUsage(calleNode);
+            boolean shouldContinue = handler.onShouldContinue(calleNode);
 
-            if(shouldContinue) {
-                if(!isMethodAlreadyCalledInCurrentPath(newCallerNode)) {
+            if (shouldContinue) {
+                if (!isMethodAlreadyCalledInCurrentPath(newCallerNode)) {
                     findCallersRecursively(newCallerNode, handler); // RECURSION
                 }
             }
@@ -69,7 +67,7 @@ public class HierarchyGen extends AnalysisUtils {
     }
 
     private void getAllNodesToRootRecursively(Node node, List<Node> nodes) {
-        if( node.getParrentNode() == null )
+        if (node.getParrentNode() == null)
             return;
 
         nodes.add(node.getParrentNode());

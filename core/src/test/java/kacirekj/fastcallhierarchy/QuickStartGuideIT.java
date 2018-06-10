@@ -17,7 +17,9 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class QuickStartGuideIT {
-	Method calle = new Method("java/lang/Object hashCode ()I"); // method call
+	//Method calle = new Method("java/lang/Object hashCode ()I"); // method call
+	Method calle = new Method("cz/george/testmodule/A methodForA ()V"); // method call
+
 	Set<Clazz> parsedClasses;
 
 	@Before
@@ -25,16 +27,13 @@ public class QuickStartGuideIT {
 		// 0. Load testing JAR file (replace with your JAR)
 		String runPath = URLDecoder.decode(
 				QuickStartGuideIT.class.getProtectionDomain().getCodeSource().getLocation().getPath(), "UTF-8");
-		File testJAR = new File( "C:\\Users\\Jiri Kacirek\\Downloads\\liferay-ce-portal-tomcat-7.0-ga6-20180320170724974.zip");
-
-		// 1. Create ArtifactsLoader.
-		JarFile jarFile = new JarFile(testJAR);
+		// File testJAR = new File( "C:\\Users\\Jiri Kacirek\\Downloads\\liferay-ce-portal-tomcat-7.0-ga6-20180320170724974.zip");
+		File testJAR = new File(runPath + File.separator + "fastcallhierarchy-testproject-1.0.1.jar");
 
 		// 2. Parse all classes in the given JAR
 		ArtifactsLoader jarLoader = new ArtifactsLoader();
 		//jarLoader.extractJar(testJAR, jarLoader.TEMP_DIR);
-		parsedClasses = jarLoader.parseFiles(jarLoader.TEMP_DIR);
-
+		parsedClasses = jarLoader.extractJarAndParseFiles(testJAR);
 	}
 	
 	@Test
