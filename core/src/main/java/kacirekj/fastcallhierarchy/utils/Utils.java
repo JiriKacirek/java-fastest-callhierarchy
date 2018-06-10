@@ -8,11 +8,15 @@ public class Utils {
         consolePrintNodeRecursively(rootNode, 0);
     }
     private static void consolePrintNodeRecursively(Node node, int layer) {
-        System.out.println(spacing(layer).append( node.toString() ));
+        print(node.toString(), layer);
         for(Object childNode : node.getChildNodes()) {
             Node n = (Node)childNode;
             consolePrintNodeRecursively(n, layer + 1); // RECURSION
         }
+    }
+
+    public static void print(String txt, int layer) {
+        System.out.println(spacing(layer).append( txt ));
     }
 
     private static StringBuilder spacing(int num) {
