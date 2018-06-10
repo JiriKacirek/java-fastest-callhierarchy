@@ -17,6 +17,12 @@ Use case: you want quickly write to console call hierarchy above some JAR. Follo
 - All Nested Classes all ignored - support will be implemented (one day..)
 - Polymorphism is supported for sure but resolving of concrete instance is impossible. Read bellow.
 
+### TODO
+- test that generator is working on some more complex JAR with intense use of abstraction
+- add some lazy hierarchy generation which will generate hierarchies layer per layer
+- add parameter to set maximum layers because of possible permutations above polymorphism
+- maybe add some permutations filter as currently it can generate lot of redundant paths in code
+
 ### About
 This generator is very fast which is also the reason why it have been created. It's fastest then IntelliJ Idea 
 generator or Eclipse generator. It's fastest then all GitHub generators I've seen. Generating method call hierarchy on 
