@@ -5,12 +5,13 @@ This is fastest Method Call Hierarchy generator on GitHub. :) (as I'm aware)
 
 ### Quick start guide
 
-Use case: you want quickly write to console call hierarchy above some JAR. Follow this steps:
+Use case: you want quickly write to console method call hierarchy above some method. Follow this steps:
 1. Download or Clone this repository
 2. Open project in IntelliJ IDEA (It's not nessesary but project is build and configured in this IDE)
 3. Look in /core/src/test/java/QuickStartGuideIT where is prepared example for testing JAR file.
 4. Modify this unit test to load your own JAR. Done.
 
+Donwside: it only works above jar you have to provide so it's not such comfortable as generating Find usages hierarchy in some IDE. But it's blazingly faster! Use it when your hierarchy is so large that it takes too long to generate it in an IDE.
 
 ### Project status
 - Method call hierarchy for the given method bytecode signature is working but it was not tested on more complerx JAR
